@@ -20,7 +20,7 @@ title                    : "YJH.기술 블로그"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "yoonjihong"
-description              : "ㅅㄷㄴㅅ"
+description              : "윤지홍의 기술 블로그"
 url                      : "https://yoonjihong.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "윤지홍"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "윤지홍의 기술 블로그"
+  bio              : "test"
   location         : "Ansan City, Gyeonggi Province"
   email            : "wmsttks@gmail.com"
   links:
