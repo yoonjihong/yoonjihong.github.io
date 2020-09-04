@@ -1,0 +1,38 @@
+header {
+  margin-bottom: 1.45rem;
+  /* border-top: 4px solid #8565fc; */
+  padding: 1.7rem 0;
+  display: flex;
+
+  .menu {
+    display: flex;
+    
+    .item {
+      margin-right: 2.5rem;
+
+      a {
+        font-family: 'sans-500';
+        font-size: 1.1rem;
+        display: inline-block;
+        padding-bottom: 2px;
+        transition: .2s;
+    
+        &.active {
+          font-family: 'sans-700';
+          border-bottom: 2px solid #333e4c;
+        }
+    
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+        }
+
+        &:hover {
+          opacity: .6;
+        }
+      }
+    }
+  }
+}
