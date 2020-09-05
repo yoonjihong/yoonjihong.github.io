@@ -26,10 +26,12 @@ const menuData = [
 
 
 export default function Header() {
-  const type = window.location.pathname.replace('/', '').split('/')[0]
-
-
+  const [type, setType] = useState('')
+  
+  
   useEffect(() => {
+    setType(window.location.pathname.replace('/', '').split('/')[0])
+
     const headerH = document.getElementsByTagName('header')[0].offsetHeight
     document.getElementsByClassName('pageWrap')[0].style.paddingTop = `calc(${headerH}px + 3.5rem)`
   }, [])

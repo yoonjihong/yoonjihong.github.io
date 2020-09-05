@@ -20,15 +20,12 @@ export default function ScrollView() {
     setState(produce(v => {
       v.maxH = document.body.offsetHeight - window.innerHeight
     }))
-  }, [document.body.offsetHeight])
+  }, [])
 
   useEffect(() => {
-    if (state.maxH === 0) {
-      return
+    if (state.maxH !== 0) {
+      window.addEventListener('scroll', OnScroll)
     }
-    
-    window.removeEventListener('scroll', OnScroll, true)
-    window.addEventListener('scroll', OnScroll)
   }, [state.maxH])
 
 

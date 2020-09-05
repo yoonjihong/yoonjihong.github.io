@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Transition, TransitionGroup } from 'react-transition-group'
@@ -10,6 +10,7 @@ import ScrollView from "./scrollView/scrollView"
 import "./layout.css"
 
 const Layout = ({ children, location }) => {
+  const [path, setPath] = useState('')
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,13 +21,18 @@ const Layout = ({ children, location }) => {
     }
   `)
 
+  
+  useEffect(() => {
+    setPath(location.pathname)
+  }, [])
+
 
   return (
     <TransitionGroup
       component={null}
     >
       <Transition
-        key={location.pathname}
+        key={path}
         timeout={{
           enter: 300,
           exit: 300
