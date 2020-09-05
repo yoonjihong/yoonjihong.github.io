@@ -5,6 +5,7 @@ import { Transition, TransitionGroup } from 'react-transition-group'
 
 import Header from "./header/header"
 import Footer from "./footer/Footer"
+import ScrollView from "./scrollView/scrollView"
 
 import "./layout.css"
 
@@ -34,8 +35,9 @@ const Layout = ({ children, location }) => {
         {status => (
           <div className={`page ${status}`}>
             <Header />
+            <ScrollView />
 
-            <div className="wrap">
+            <div className="pageWrap wrap">
               <main>{children}</main>
             </div>
 

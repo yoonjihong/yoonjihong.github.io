@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 
 import SEO from "../seo"
@@ -27,6 +27,13 @@ const menuData = [
 
 export default function Header() {
   const type = window.location.pathname.replace('/', '').split('/')[0]
+
+
+  useEffect(() => {
+    const headerH = document.getElementsByTagName('header')[0].offsetHeight
+    document.getElementsByClassName('pageWrap')[0].style.paddingTop = `calc(${headerH}px + 3.5rem)`
+  }, [])
+
 
   return (
     <header>

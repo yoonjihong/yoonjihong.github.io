@@ -1,21 +1,52 @@
 .blog {
 
   .postList {
+    margin-top: -2.5rem;
 
     .item {
-      margin-bottom: 2rem;
+      position: relative;
+      border-bottom: 1px solid rgba(0,0,0,.07);
+      padding: 2.5rem 0;
+      opacity: .5;
+      left: 0;
+      transition: opacity .3s, left .3s;
+
+      &.active {
+        opacity: 1;
+        left: 0;
+      }
+
+      &:hover {
+        left: -1rem;
+      }
+      
+      & * {
+        cursor: pointer;
+      }
+
+      .category {
+        color: var(--mainColor);
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
 
       .title {
         font-size: 1.5rem;
         color: #000;
+        font-weight: 900;
+        padding: .4rem 0 .2rem;
       }
 
       .subTitle {
-
+        color: #90949a;
+        font-size: 1.1rem;
+        font-weight: 500;
       }
 
       .previewTxt {
-        
+        color: #90949a;
+        padding-top: 1.5rem;
+        font-size: 1rem;
       }
     }
   }

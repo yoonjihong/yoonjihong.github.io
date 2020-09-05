@@ -1,7 +1,7 @@
 ---
-title: 테스트 게시글 2
+title: 1일 1포스팅을 위해 해야할 것들.
 subtitle: 이것은 서브타이틀!?
-category: dev
+category: Develop
 ---
     
 # Hi22!

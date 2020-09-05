@@ -264,7 +264,7 @@ h2 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -690,12 +690,18 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  transition: all 0.3s;
+  transition: top 0.3s, opacity .3s;
+  opacity: 0;
+  position: relative;
 }
 
-.page.entering,
 .page.entered {
-  position: relative;
+  opacity: 1;
+  top: 0;
+}
+
+.page.exited {
+  opacity: 0;
 }
 
 .page.exiting,
@@ -706,7 +712,16 @@ a {
 .page.exiting,
 .page.entering {
   top: 10px;
-  opacity: 0;
 }
 
 /*  */
+
+:root {
+  --mainColor: #6C4CF0;
+}
+
+button {
+  border: inherit;
+  color: inherit;
+  background: inherit;
+}
