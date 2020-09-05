@@ -4,8 +4,6 @@ import Layout from "../components/layout"
 
 export default function about() {
   return (
-    <Layout>
-      <div className="about">about</div>
-    </Layout>
+    <div className="about">about</div>
   )
 }

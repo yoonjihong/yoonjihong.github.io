@@ -682,3 +682,29 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+
+/* add */
+.page {
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.page.entering,
+.page.entered {
+  position: relative;
+}
+
+.page.exiting,
+.page.exited {
+  position: absolute;
+}
+
+.page.exiting,
+.page.entering {
+  top: 10px;
+  opacity: 0;
+}

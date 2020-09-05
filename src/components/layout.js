@@ -1,19 +1,14 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Transition, TransitionGroup } from 'react-transition-group'
 
 import Header from "./header/header"
 import Footer from "./footer/Footer"
+
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, location }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,15 +21,29 @@ const Layout = ({ children }) => {
 
 
   return (
-    <>
-      <Header />
+    <TransitionGroup
+      component={null}
+    >
+      <Transition
+        key={location.pathname}
+        timeout={{
+          enter: 300,
+          exit: 300
+        }}
+      >
+        {status => (
+          <div className={`page ${status}`}>
+            <Header />
 
-      <div className="wrap">
-        <main>{children}</main>
-      </div>
+            <div className="wrap">
+              <main>{children}</main>
+            </div>
 
-      <Footer />
-    </>
+            <Footer />
+          </div>
+        )}
+      </Transition>
+    </TransitionGroup>
   )
 }
 
