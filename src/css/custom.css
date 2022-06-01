@@ -1,0 +1,116 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #000;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@font-face {
+  src: url('/static/GmarketSansTTF/GmarketSansTTFBold.woff');
+  font-family: 'gm';
+  font-weight: 900;
+}
+
+@font-face {
+  src: url('/static/GmarketSansTTF/GmarketSansTTFMedium.woff');
+  font-family: 'gm';
+  font-weight: 500;
+}
+
+@font-face {
+  src: url('/static/GmarketSansTTF/GmarketSansTTFLight.woff');
+  font-family: 'gm';
+  font-weight: 100;
+}
+
+* {
+  font-family: 'gm';
+}
+
+.navbar__item:hover,
+.navbar__link--active {
+  background: #000;
+  border-radius: 0.4rem;
+  color: #fff;
+}
+
+.navbar__link--active:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar__item {
+  cursor: pointer;
+}
+
+.dropdown--hoverable:hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.navbar__link--active a {
+  color: white;
+}
+
+.dropdown__menu {
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  background: #000;
+  min-width: 9rem;
+  top: 100%;
+  border-top-left-radius: 0rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.dropdown__link {
+  transition: 0.2s;
+  color: #fff;
+}
+
+.dropdown__link:hover,
+.dropdown__link--active {
+  background: none;
+}
+
+.dropdown__link:hover {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+}
+
+.dropdown--hoverable:hover .navbar__link,
+.navbar__link.dropdown--hoverable:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
