@@ -6,6 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
+  --primary: #560cbf;
   --ifm-color-primary: #000;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -57,60 +58,237 @@
 }
 
 * {
-  font-family: 'gm';
+  font-family: 'gm' !important;
 }
 
-.navbar__item:hover,
-.navbar__link--active {
-  background: #000;
-  border-radius: 0.4rem;
-  color: #fff;
+body,
+html {
 }
 
-.navbar__link--active:hover {
-  color: rgba(255, 255, 255, 0.8) !important;
+.navbar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  z-index: -1;
 }
 
-.navbar__item {
-  cursor: pointer;
+.navbar {
+  background: none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: auto;
 }
 
-.dropdown--hoverable:hover {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+@media (max-width: 996px) {
+  .navbar {
+    height: var(--ifm-navbar-height) !important;
+  }
 }
 
-.navbar__link--active a {
-  color: white;
+.navbar__inner {
+  max-width: var(--ifm-container-width-xl);
+  padding: 0 var(--ifm-spacing-horizontal);
+  margin: 0 auto;
 }
 
 .dropdown__menu {
-  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  background: #000;
-  min-width: 9rem;
-  top: 100%;
-  border-top-left-radius: 0rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6rem 1rem 1rem 1rem;
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  overflow: visible !important;
+  border-radius: 1.8rem;
+  transform: translateY(-3px) !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: none;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+.dropdown__menu li {
+  padding: 0 0.1rem;
 }
 
 .dropdown__link {
-  transition: 0.2s;
-  color: #fff;
-}
-
-.dropdown__link:hover,
-.dropdown__link--active {
-  background: none;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  padding: 0.25rem 1rem;
+  border-radius: 10rem;
+  background: rgba(0, 0, 0, 0.06);
+  font-size: 0.8rem;
+  transition: 0.1s;
 }
 
 .dropdown__link:hover {
-  background: #fff;
-  color: #000;
-  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+  background: rgba(0, 0, 0, 0.1);
 }
 
-.dropdown--hoverable:hover .navbar__link,
-.navbar__link.dropdown--hoverable:hover {
-  color: rgba(255, 255, 255, 0.8) !important;
+.dropdown__link.dropdown__link--active {
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+.navbar__item {
+  padding-top: 1.064rem;
+  padding-bottom: 1.064rem;
+}
+
+.navbar__link svg {
+  display: none !important;
+}
+
+.dropdown > .navbar__link {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.dropdown > .navbar__link:after {
+  content: '+';
+  transform: translateY(0);
+  border: none;
+  top: 0;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.dropdown:hover > .navbar__link:after {
+  content: '-';
+}
+
+.nav-devMenu ~ .dropdown__menu {
+  min-width: 20rem;
+}
+
+.nav-subTitleWrap {
+  display: block;
+  width: 100%;
+}
+
+.nav-subTitleWrap:not(:first-child) {
+  margin-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.03);
+  padding-top: 0.3rem;
+}
+
+.nav-subTitle {
+  display: inline-block;
+  padding: 0.4rem 0.8rem 0.1rem 0.1rem;
+  font-weight: bold;
+  font-size: 0.8rem;
+  /* background: rgba(0, 0, 0, 0.1); */
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-subTitle::before {
+  content: '#';
+  display: block;
+  /* width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--primary);
+  border-radius: 50%; */
+  /* margin-right: 0.5rem; */
+}
+
+.nav-subTitleWrap:first-child {
+  margin-top: -0.3rem;
+}
+
+.container {
+  padding-top: 1rem !important;
+}
+
+.blogPostTitle_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-styles-module {
+  font-size: 1.6rem !important;
+  margin-bottom: 0 !important;
+}
+
+.blogPostData_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-styles-module {
+  margin-top: 0.3rem !important;
+}
+
+.markdown {
+  font-size: 0.9rem;
+}
+
+.pagination-nav__link {
+  background: rgba(0, 0, 0, 0.03);
+  color: #000;
+  border: none !important;
+  transition: 0.2s;
+}
+
+.pagination-nav__link:hover {
+  color: #fff;
+  /* opacity: 0.7; */
+  transform: translateX(1rem);
+  background: var(--primary);
+}
+
+.pagination-nav__link--prev:hover {
+  transform: translateX(-1rem);
+}
+
+.pagination-nav__link:hover .pagination-nav__sublabel {
+  color: white;
+}
+
+.pagination-nav__sublabel {
+  color: #000;
+}
+
+.markdown:not(#post-content) {
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1rem 1.2rem;
+  border-radius: 0.8rem;
+}
+
+article[itemtype="http://schema.org/BlogPosting"] footer
+{
+  margin-top: 1.5rem !important;
+}
+
+article[itemtype="http://schema.org/BlogPosting"] footer b
+{
+  display: none;
+}
+
+article[itemtype="http://schema.org/BlogPosting"] footer ul
+{
+  margin-left: 0 !important;
+}
+
+.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module {
+  border-radius: 50rem !important;
+  border: none !important;
+  background: var(--primary);
+  color: white !important;
+  transition: all 0.2s !important;
+}
+.tag_node_modules-\@docusaurus-theme-classic-lib-theme-Tag-styles-module:hover {
+  opacity: 0.8;
+}
+
+.authorCol_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostAuthors-styles-module {
+  display: none;
+}
+
+.margin-bottom--xl {
+  margin-bottom: 3rem !important;
 }

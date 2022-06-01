@@ -96,13 +96,20 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: '-제목이생각안나서-',
+        title: '그냥제목이생각안나서',
+        hideOnScroll: true,
         items: [
           {
             to: '/dev/flutter',
-            label: '개발+',
+            label: '개발',
             position: 'left',
+            className: 'nav-devMenu',
             items: [
+              {
+                type: 'html',
+                value: '<div class="nav-subTitle">웹</div>',
+                className: 'nav-subTitleWrap',
+              },
               {
                 label: 'Js/Ts',
                 to: '/dev/js-ts',
@@ -112,19 +119,81 @@ const config = {
                 to: '/dev/react',
               },
               {
+                label: 'HTML',
+                to: '/dev/html',
+              },
+              {
+                label: 'CSS',
+                to: '/dev/css',
+              },
+              {
+                label: 'Capacitor',
+                to: '/dev/capacitor',
+              },
+              {
+                type: 'html',
+                value: '<div class="nav-subTitle">안드로이드</div>',
+                className: 'nav-subTitleWrap',
+              },
+              {
+                label: 'Kotlin',
+                to: '/dev/kotlin',
+              },
+              {
+                type: 'html',
+                value: '<div class="nav-subTitle">IOS</div>',
+                className: 'nav-subTitleWrap',
+              },
+              {
+                label: '스위프트',
+                to: '/dev/swift',
+              },
+              {
+                type: 'html',
+                value: '<div class="nav-subTitle">크로스플랫폼</div>',
+                className: 'nav-subTitleWrap',
+              },
+              {
                 label: 'Flutter',
                 to: '/dev/flutter',
               },
               {
-                label: 'Swift',
-                to: '/dev/swift',
+                label: 'ReactNative',
+                to: '/dev/reactnative',
+              },
+              {
+                type: 'html',
+                value: '<div class="nav-subTitle">서버</div>',
+                className: 'nav-subTitleWrap',
+              },
+              {
+                label: 'AWS',
+                to: '/dev/aws',
+              },
+              {
+                label: 'Docker',
+                to: '/dev/docker',
+              },
+              {
+                label: 'NestJs',
+                to: '/dev/nestjs',
               },
             ],
           },
           {
+            to: '/',
+            label: '디자인',
+            position: 'left',
+          },
+          {
+            to: '/',
+            label: '기타',
+            position: 'left',
+          },
+          {
             href: 'https://github.com/yoonjihong',
-            label: 'Github',
-            position: 'right',
+            label: '깃허브',
+            position: 'left',
           },
         ],
       },
