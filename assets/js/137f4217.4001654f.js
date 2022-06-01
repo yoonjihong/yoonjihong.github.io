@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[165],{8550:function(t){t.exports=JSON.parse('{"permalink":"/dev/swift/tags/\uc0ac\ub78c\uc778","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
