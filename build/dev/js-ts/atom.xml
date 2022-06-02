@@ -7,10 +7,85 @@
     <link rel="alternate" href="https://yoonjihong.github.io/dev/js-ts"/>
     <subtitle>블로그 Blog</subtitle>
     <entry>
-        <title type="html"><![CDATA[호호호]]></title>
-        <id>호호호</id>
-        <link href="https://yoonjihong.github.io/dev/js-ts/호호호"/>
+        <title type="html"><![CDATA[테마 전환 기능]]></title>
+        <id>테마 전환 기능</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능"/>
         <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</p><p><a href="https://medium.com/@jang.wangsu/swift-swift-%EC%B2%98%EC%9D%8C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B6%84%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%95%9C%EA%B5%AD%EC%96%B4-%EB%8F%99%EC%98%81%EC%83%81-%EA%B0%95%EC%9D%98-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EB%AA%A8%EC%95%84%EB%86%93%EC%9D%80-%EB%A7%81%ED%81%AC-151dae076b14" target="_blank" rel="noopener noreferrer">https://medium.com/@jang.wangsu/swift-swift-%EC%B2%98%EC%9D%8C-%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%B6%84%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%95%9C%EA%B5%AD%EC%96%B4-%EB%8F%99%EC%98%81%EC%83%81-%EA%B0%95%EC%9D%98-%EC%A0%95%EB%B3%B4%EB%A5%BC-%EB%AA%A8%EC%95%84%EB%86%93%EC%9D%80-%EB%A7%81%ED%81%AC-151dae076b14</a></p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+        <category label="도큐사우루스" term="도큐사우루스"/>
+        <category label="리액트" term="리액트"/>
+        <category label="자바스크립트" term="자바스크립트"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능2]]></title>
+        <id>테마 전환 기능2</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능2"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.]]></summary>
+        <content type="html"><![CDATA[<p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능3]]></title>
+        <id>테마 전환 기능3</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능3"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.]]></summary>
+        <content type="html"><![CDATA[<p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능4]]></title>
+        <id>테마 전환 기능4</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능4"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.]]></summary>
+        <content type="html"><![CDATA[<p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능5]]></title>
+        <id>테마 전환 기능5</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능5"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.]]></summary>
+        <content type="html"><![CDATA[<p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능6]]></title>
+        <id>테마 전환 기능6</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능6"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.]]></summary>
+        <content type="html"><![CDATA[<p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
         <author>
             <name>YJH</name>
             <uri>https://github.com/yoonjihong</uri>

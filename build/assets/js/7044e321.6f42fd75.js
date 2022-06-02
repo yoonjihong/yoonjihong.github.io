@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[3564],{3118:function(s){s.exports=JSON.parse('{"label":"\ub3c4\ud050\uc0ac\uc6b0\ub8e8\uc2a4","permalink":"/dev/js-ts/tags/\ub3c4\ud050\uc0ac\uc6b0\ub8e8\uc2a4","allTagsPath":"/dev/js-ts/tags","count":1}')}}]);

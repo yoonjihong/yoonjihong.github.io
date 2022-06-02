@@ -5,7 +5,7 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const sideBarOption = {
-  blogSidebarTitle: '전체 게시글',
+  blogSidebarTitle: '게시글',
   blogSidebarCount: 'ALL',
   postsPerPage: 10,
   // blogListComponent: '@theme/BlogListPage',
@@ -96,7 +96,7 @@ const config = {
         disableSwitch: true,
       },
       navbar: {
-        title: '그냥제목이생각안나서',
+        title: '제목이생각안나서',
         hideOnScroll: true,
         items: [
           {
