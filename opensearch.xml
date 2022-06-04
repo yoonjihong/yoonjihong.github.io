@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>블로그</ShortName>
+  <Description>Search 블로그</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Url type="text/html" method="get" template="https://yoonjihong.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://yoonjihong.github.io/opensearch.xml" />
+  <moz:SearchForm>https://yoonjihong.github.io/</moz:SearchForm>
+</OpenSearchDescription>

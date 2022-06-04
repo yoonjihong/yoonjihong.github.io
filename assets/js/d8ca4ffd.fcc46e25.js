@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[3854],{1722:function(e){e.exports=JSON.parse('[{"label":"\uc0ac\ub78c\uc778","permalink":"/dev/react/tags/\uc0ac\ub78c\uc778","count":1}]')}}]);

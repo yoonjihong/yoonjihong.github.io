@@ -7,10 +7,88 @@
     <link rel="alternate" href="https://yoonjihong.github.io/dev/js-ts"/>
     <subtitle>블로그 Blog</subtitle>
     <entry>
-        <title type="html"><![CDATA[호호호]]></title>
-        <id>호호호</id>
-        <link href="https://yoonjihong.github.io/dev/js-ts/호호호"/>
+        <title type="html"><![CDATA[테마 전환 기능]]></title>
+        <id>테마 전환 기능</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능"/>
         <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>대부분 어떤 서비스를 개발 할때 팀 단위로 각자 한 부분을 담당하여 개발을 하게 된다.</p><p>하지만 반드시 어떤 상황에서 내가 개발한 기능을 다른 개발자가 수정하는 일이 생긴다.
+우선 코드를 수정하기 위해선 코드에 대한 이해가 먼저다.</p><p>하지만 코드를 수정하는 시간보다 다른 사람이 작성한 코드를 이해하는데 더 많은 시간이 소요된다고한다.</p><p>이런 상황에서 기존에 작성된 코드의 질이 떨어진다면 코드 해석에 있어 더 오랜 시간이 소요될 것이다.</p><p>(질이 떨어진다는 것은 가독성이 좋지 않거나 중복된 코드, 확장이 어려운 코드, 일관성이 없는 코드 등을 말함)</p><p>코드 해석에 오랜 시간이 소요된다는 것은 곧 개발 공수가 많이 들어간다는 것이다.</p><p>이것은 곳 큰 손실로 이어지고 심각한 경우 다음 프로젝트에까지 영향을 끼칠 수 있다.</p><p>(실제로 많이 겪어 봤음..)</p><p>또한 소프트웨어 결함의 대부분이 기존 코드를 수정할 때 발생한다고 한다.</p><p>그런데 기존 코드를 해석하지 못한 상태에서 수정을 하게 된다면 어떻게 될까?</p><p>오류가 발생할 확률이 증가하는 것은 물론이고 코드의 품질도 당연히 떨어질 것이다.</p><p>그리고 코드의 품질은 곧 오류에 대한 대응 속도에 영향을 끼치게 된다.</p><p>당연한 말이지만 대응 속도가 늘어나면 늘어날수록 비용은 계속 증가한다.</p><hr><p>미낭러미나얼마ㅣㄴ얼마ㅣㄴ</p><hr>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+        <category label="도큐사우루스" term="도큐사우루스"/>
+        <category label="리액트" term="리액트"/>
+        <category label="테스트" term="테스트"/>
+        <category label="자바스크립트" term="자바스크립트"/>
+        <category label="블로그" term="블로그"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능2]]></title>
+        <id>테마 전환 기능2</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능2"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능3]]></title>
+        <id>테마 전환 기능3</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능3"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능4]]></title>
+        <id>테마 전환 기능4</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능4"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능5]]></title>
+        <id>테마 전환 기능5</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능5"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
+        <author>
+            <name>YJH</name>
+            <uri>https://github.com/yoonjihong</uri>
+        </author>
+        <category label="사람인" term="사람인"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[테마 전환 기능6]]></title>
+        <id>테마 전환 기능6</id>
+        <link href="https://yoonjihong.github.io/dev/js-ts/테마 전환 기능6"/>
+        <updated>2021-08-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></summary>
+        <content type="html"><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있습니다. 선택한 스타일은 선택한 테마와 상관없이 항상 적용됩니다.
+현재 설정할 수 있는 스타일 옵션은 2가지입니다. dark, primary(--ifm-color-primary 색상에 따라) 인피마 문서에서 적용될 스타일을 확인해볼 수 있습니다.</p>]]></content>
         <author>
             <name>YJH</name>
             <uri>https://github.com/yoonjihong</uri>
