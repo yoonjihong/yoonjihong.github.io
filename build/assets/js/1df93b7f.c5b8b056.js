@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[3237],{3808:function(t,e,n){n.r(e),n.d(e,{default:function(){return s}});var u=n(7294),i=n(3943),r=(n(9960),n(2263));function s(){(0,r.Z)().siteConfig;return u.createElement(i.Z,{title:"\ub85c\uadf8",description:"\uac1c\ubc1c \ub85c\uadf8"})}}}]);

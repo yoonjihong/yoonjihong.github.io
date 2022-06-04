@@ -5,8 +5,8 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const sideBarOption = {
-  blogSidebarTitle: '게시글',
-  blogSidebarCount: 'ALL',
+  blogSidebarTitle: '최근 게시물',
+  blogSidebarCount: 5,
   postsPerPage: 10,
   // blogListComponent: '@theme/BlogListPage',
   // blogPostComponent: '@theme/BlogPostPage',
@@ -95,8 +95,31 @@ const config = {
       colorMode: {
         disableSwitch: true,
       },
+      algolia: {
+        // 알골리아에서 제공한 appId를 사용하세요.
+        appId: 'YOUR_APP_ID',
+
+        // 공개 API 키: 커밋해도 문제가 생기지 않습니다.
+        apiKey: 'YOUR_SEARCH_API_KEY',
+
+        indexName: 'YOUR_INDEX_NAME',
+
+        // 옵션: 아래 문서를 참고
+        contextualSearch: true,
+
+        // 옵션: history.push 대신 window.location을 통해 탐색해야 하는 도메인을 지정합니다. 여러 문서 사이트를 크롤링하고 window.location.href를 사용하여 해당 사이트로 이동하려는 경우에 유용한 알골리아 설정입니다.
+        externalUrlRegex: 'external\\.com|domain\\.com',
+
+        // 옵션: 알골리아 검색 파라미터
+        searchParameters: {},
+
+        // 옵션: 기본적으로 활성화된 검색 페이지 경로(비활성화하려면 `false`로 설정)
+        searchPagePath: 'search',
+
+        //... 다른 알골리아 파라미터
+      },
       navbar: {
-        title: '제목이생각안나서',
+        title: '제목 없음',
         hideOnScroll: true,
         items: [
           {
@@ -120,15 +143,15 @@ const config = {
               },
               {
                 label: 'HTML',
-                to: '/dev/html',
+                to: '/dev/react',
               },
               {
                 label: 'CSS',
-                to: '/dev/css',
+                to: '/dev/react',
               },
               {
                 label: 'Capacitor',
-                to: '/dev/capacitor',
+                to: '/dev/react',
               },
               {
                 type: 'html',
@@ -137,7 +160,7 @@ const config = {
               },
               {
                 label: 'Kotlin',
-                to: '/dev/kotlin',
+                to: '/dev/react',
               },
               {
                 type: 'html',
@@ -146,7 +169,7 @@ const config = {
               },
               {
                 label: '스위프트',
-                to: '/dev/swift',
+                to: '/dev/react',
               },
               {
                 type: 'html',
@@ -155,11 +178,11 @@ const config = {
               },
               {
                 label: 'Flutter',
-                to: '/dev/flutter',
+                to: '/dev/react',
               },
               {
                 label: 'ReactNative',
-                to: '/dev/reactnative',
+                to: '/dev/react',
               },
               {
                 type: 'html',
@@ -168,25 +191,25 @@ const config = {
               },
               {
                 label: 'AWS',
-                to: '/dev/aws',
+                to: '/dev/react',
               },
               {
                 label: 'Docker',
-                to: '/dev/docker',
+                to: '/dev/react',
               },
               {
                 label: 'NestJs',
-                to: '/dev/nestjs',
+                to: '/dev/react',
               },
             ],
           },
           {
-            to: '/',
+            to: '/dev/react',
             label: '디자인',
             position: 'left',
           },
           {
-            to: '/',
+            to: '/dev/react',
             label: '기타',
             position: 'left',
           },
