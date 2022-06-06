@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --primary: royalblue;
+  --primary: hsl(226, 100%, 62%);
   --ifm-color-primary: #000;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
@@ -75,7 +75,7 @@ html {
   position: absolute;
   width: 120%;
   height: 8px;
-  background: royalblue;
+  background: hsl(226, 100%, 62%);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -372,16 +372,18 @@ html {
   position: fixed;
   right: 2rem;
   bottom: 2rem;
+  grid-template-columns: none;
   /* width: 34rem; */
 }
 
 .pagination-nav__link {
-  border-radius: 10rem;
+  border-radius: 0.4rem;
   padding: 0.8rem 1.4rem;
 }
 
 .pagination-nav__label {
   font-size: 0.8rem;
+  font-weight: normal;
   display: flex;
   justify-content: space-between;
 }
@@ -393,26 +395,27 @@ html {
 
 .pagination-nav__link--prev {
   border: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: #f2f3f7;
   padding-left: 1rem;
+  color: #7a7c85;
 }
 
 .pagination-nav__link--next {
-  background: #000;
+  background: #f2f3f7;
   border: none;
-  color: white;
+  color: #7a7c85;
   padding-right: 1rem;
 }
 
 .pagination-nav__link:hover {
   color: white;
-  background: royalblue;
+  background: hsl(226, 100%, 62%);
 }
 
 .pagination-nav__link--prev .pagination-nav__label::before {
   content: '<' !important;
   font-weight: normal;
-  margin-right: 0.8rem;
+  margin-right: 1.2rem;
   font-size: 0.8rem;
   opacity: 0.4;
 }
@@ -420,7 +423,7 @@ html {
 .pagination-nav__link--next .pagination-nav__label::after {
   content: '>' !important;
   font-weight: normal;
-  margin-left: 0.8rem;
+  margin-left: 1.2rem;
   font-size: 0.8rem;
   opacity: 0.4;
 }
@@ -429,4 +432,49 @@ html {
   .container {
     /* max-width: 90vw !important; */
   }
+}
+
+div.main-wrapper > div > div > aside > nav > div {
+  font-size: 0.8rem;
+  font-weight: 500;
+  opacity: 0.7;
+  margin-bottom: 0.3rem !important;
+}
+
+div.main-wrapper > div > div > aside > nav > ul > li {
+  margin-top: 0.4rem;
+}
+
+div.main-wrapper > div > div > aside > nav > ul > li > a {
+  font-size: 12px;
+  background: #f2f3f7;
+  display: inline-block;
+  padding: 0.4rem 0.9rem 0.4rem 0.9rem;
+  color: hsl(230, 4%, 50%);
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+div.main-wrapper > div > div > aside > nav > ul > li > a:hover::after {
+  background: #000;
+  color: white;
+}
+
+/* div.main-wrapper > div > div > aside > nav > ul > li > a::after {
+  content: '+';
+  margin-left: 1rem;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.3rem;
+  transition: 0.1s;
+} */
+
+body
+  .sidebarItemLinkActive_node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
+  background: #1a1b1e !important;
+  background: hsl(226, 100%, 62%) !important;
+  color: white !important;
 }

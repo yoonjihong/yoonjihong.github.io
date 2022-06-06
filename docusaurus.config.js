@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 const sideBarOption = {
   blogSidebarTitle: '최근 게시물',
-  blogSidebarCount: 5,
+  blogSidebarCount: 10,
   postsPerPage: 10,
   // blogListComponent: '@theme/BlogListPage',
   // blogPostComponent: '@theme/BlogPostPage',
