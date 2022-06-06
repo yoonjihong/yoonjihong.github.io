@@ -14,8 +14,7 @@
             <guid>테마 전환 기능</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다]]></description>
-            <content:encoded><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>대부분 어떤 서비스를 개발 할때 팀 단위로 각자 한 부분을 담당하여 개발을 하게 된다.</p><p>하지만 반드시 어떤 상황에서 내가 개발한 기능을 다른 개발자가 수정하는 일이 생긴다.
-우선 코드를 수정하기 위해선 코드에 대한 이해가 먼저다.</p><p>하지만 코드를 수정하는 시간보다 다른 사람이 작성한 코드를 이해하는데 더 많은 시간이 소요된다고한다.</p><p>이런 상황에서 기존에 작성된 코드의 질이 떨어진다면 코드 해석에 있어 더 오랜 시간이 소요될 것이다.</p><p>(질이 떨어진다는 것은 가독성이 좋지 않거나 중복된 코드, 확장이 어려운 코드, 일관성이 없는 코드 등을 말함)</p><p>코드 해석에 오랜 시간이 소요된다는 것은 곧 개발 공수가 많이 들어간다는 것이다.</p><p>이것은 곳 큰 손실로 이어지고 심각한 경우 다음 프로젝트에까지 영향을 끼칠 수 있다.</p><p>(실제로 많이 겪어 봤음..)</p><p>또한 소프트웨어 결함의 대부분이 기존 코드를 수정할 때 발생한다고 한다.</p><p>그런데 기존 코드를 해석하지 못한 상태에서 수정을 하게 된다면 어떻게 될까?</p><p>오류가 발생할 확률이 증가하는 것은 물론이고 코드의 품질도 당연히 떨어질 것이다.</p><p>그리고 코드의 품질은 곧 오류에 대한 대응 속도에 영향을 끼치게 된다.</p><p>당연한 말이지만 대응 속도가 늘어나면 늘어날수록 비용은 계속 증가한다.</p><hr><p>미낭러미나얼마ㅣㄴ얼마ㅣㄴ</p><hr>]]></content:encoded>
+            <content:encoded><![CDATA[<div class="previewBox"><div class="texts">테마 전환 기능을 비활성화하지 않고도 메뉴바의 스타일을 따로 설정할 수 있다</div></div><p>대부분 어떤 서비스를 개발 할때 팀 단위로 각자 한 부분을 담당하여 개발을 하게 된다.</p><hr><p>미낭러미나얼마ㅣㄴ얼마ㅣㄴ</p><hr>]]></content:encoded>
             <category>사람인</category>
             <category>도큐사우루스</category>
             <category>리액트</category>
@@ -24,7 +23,7 @@
             <category>블로그</category>
         </item>
         <item>
-            <title><![CDATA[테마 전환 기능2]]></title>
+            <title><![CDATA[당겨서 새로고침 구현하기]]></title>
             <link>https://yoonjihong.github.io/dev/js-ts/테마 전환 기능2</link>
             <guid>테마 전환 기능2</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
@@ -34,7 +33,7 @@
             <category>사람인</category>
         </item>
         <item>
-            <title><![CDATA[테마 전환 기능3]]></title>
+            <title><![CDATA[Hero 애니메이션 사용하기]]></title>
             <link>https://yoonjihong.github.io/dev/js-ts/테마 전환 기능3</link>
             <guid>테마 전환 기능3</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
@@ -44,7 +43,7 @@
             <category>사람인</category>
         </item>
         <item>
-            <title><![CDATA[테마 전환 기능4]]></title>
+            <title><![CDATA[페이지 전환 효과 적용하기]]></title>
             <link>https://yoonjihong.github.io/dev/js-ts/테마 전환 기능4</link>
             <guid>테마 전환 기능4</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
@@ -54,7 +53,7 @@
             <category>사람인</category>
         </item>
         <item>
-            <title><![CDATA[테마 전환 기능5]]></title>
+            <title><![CDATA[GetX 사용하기(2)]]></title>
             <link>https://yoonjihong.github.io/dev/js-ts/테마 전환 기능5</link>
             <guid>테마 전환 기능5</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
@@ -64,7 +63,7 @@
             <category>사람인</category>
         </item>
         <item>
-            <title><![CDATA[테마 전환 기능6]]></title>
+            <title><![CDATA[GetX 사용하기(1)]]></title>
             <link>https://yoonjihong.github.io/dev/js-ts/테마 전환 기능6</link>
             <guid>테마 전환 기능6</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
