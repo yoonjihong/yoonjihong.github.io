@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -58,12 +61,24 @@
 }
 
 * {
-  font-family: 'gm' !important;
 }
 
 body,
 html {
+  font-family: 'gm' !important;
   /* background: #f2f3f7; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'gm' !important;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
 .navbar__brand {
@@ -249,7 +264,7 @@ html {
   padding-top: 1rem !important;
 }
 
-.blog-list-page
+.blog-wrapper
   main
   > article
   > header
@@ -257,47 +272,54 @@ html {
   display: none;
 }
 
-.blog-list-page main > article > header > h2 {
+.blog-wrapper main > article > header > h1,
+.blog-wrapper main > article > header > h2 {
   font-size: 1.4rem;
   font-weight: normal;
   margin-bottom: 0.1rem;
 }
 
-.blog-list-page main > article > footer {
+.blog-wrapper main > article > footer {
   margin-top: 0.5rem;
+  padding-top: 0.8rem;
+  margin-top: 1rem;
 }
 
-.blog-list-page main > article > footer > div.col.col--9 {
+.blog-wrapper main > article > footer > div.col.col--9 {
   --ifm-col-width: 100%;
   padding-left: 0.5rem;
 }
 
-.blog-list-page main > article > footer > div.col.col--9 > b {
+.blog-wrapper main > article > footer > div.col > b {
   display: none;
 }
 
-.blog-list-page main > article > footer ul li {
+.blog-wrapper main > article > footer ul li {
   margin-bottom: 0;
 }
 
-.blog-list-page main > article > footer ul a {
+.blog-wrapper main > article > footer ul a {
   border: none;
   font-size: 0.8rem;
   padding: 0 0.5rem 0 0;
   color: #7a7c85;
+  color: hsl(230, 4%, 50%);
+  background: #f2f3f7;
+  padding: 0.4rem 0.6rem 0.3rem;
+  border-radius: 0.3rem;
 }
 
-.blog-list-page main > article > footer ul a::before {
+.blog-wrapper main > article > footer ul a::before {
   content: '#';
 }
 
-.blog-list-page div.main-wrapper > div > div > main > article {
+.blog-wrapper div.main-wrapper > div > div > main > article {
   padding: 1.5rem 2rem 1.2rem 2rem;
   border-radius: 1rem;
   margin-bottom: 1.5rem !important;
 }
 
-.blog-list-page
+.blog-wrapper
   div.main-wrapper
   > div
   > div
@@ -308,8 +330,8 @@ html {
   display: none;
 }
 
-.blog-list-page
-  div.main-wrapper
+/* .blog-list-page */
+div.main-wrapper
   > div
   > div
   > main
@@ -462,19 +484,57 @@ div.main-wrapper > div > div > aside > nav > ul > li > a:hover::after {
   color: white;
 }
 
-/* div.main-wrapper > div > div > aside > nav > ul > li > a::after {
-  content: '+';
-  margin-left: 1rem;
-  font-size: 12px;
-  background: rgba(255, 255, 255, 0.6);
-  padding: 0.1rem 0.5rem;
-  border-radius: 0.3rem;
-  transition: 0.1s;
-} */
-
 body
   .sidebarItemLinkActive_node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
   background: #1a1b1e !important;
   background: hsl(226, 100%, 62%) !important;
   color: white !important;
+}
+
+.markdown li > p {
+  margin-bottom: 0.5rem !important;
+  margin-top: 0.5rem !important;
+}
+
+.markdown > pre,
+.markdown > ul,
+.markdown > p {
+  margin-bottom: 0 !important;
+}
+
+.markdown {
+  font-size: 14px;
+}
+
+.markdown > h4,
+.markdown > h5,
+.markdown > h6 {
+  font-size: 18px;
+  margin: 0.8rem 0 !important;
+}
+
+blockquote {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.markdown code {
+  padding: 0.3rem 0.5rem;
+  margin: 0 0;
+  display: inline-block;
+}
+
+.blog-list-page main article .preview {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+}
+
+.blog-post-page .preview {
+  display: none;
+}
+
+.markdown ol,
+.markdown ul {
+  padding-left: 1rem;
 }

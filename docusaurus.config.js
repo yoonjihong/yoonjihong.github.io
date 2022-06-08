@@ -24,6 +24,10 @@ const config = {
   url: 'https://yoonjihong.github.io/',
   projectName: 'yoonjihong.github.io', // Usually your repo name.
   organizationName: 'yoonjihong', // Usually your GitHub org/user name.
+  i18n: {
+    defaultLocale: 'ko',
+    locales: ['ko'],
+  },
 
   presets: [
     [
@@ -61,6 +65,16 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         ...sideBarOption,
+        id: 'monorepo',
+        routeBasePath: 'dev/monorepo',
+        path: './dev/monorepo',
+        authorsMapPath: '../authors.yml',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        ...sideBarOption,
         id: 'jsts-blog',
         routeBasePath: 'dev/js-ts',
         path: './dev/js-ts',
@@ -87,13 +101,23 @@ const config = {
         authorsMapPath: '../authors.yml',
       },
     ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        ...sideBarOption,
+        id: 'etc',
+        routeBasePath: 'dev/etc',
+        path: './dev/etc',
+        authorsMapPath: '../authors.yml',
+      },
+    ],
   ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        disableSwitch: true,
+        // disableSwitch: true,
       },
       algolia: {
         // 알골리아에서 제공한 appId를 사용하세요.
@@ -130,7 +154,7 @@ const config = {
             items: [
               {
                 type: 'html',
-                value: '<div class="nav-subTitle">웹</div>',
+                value: '<div class="nav-subTitle">프론트엔드</div>',
                 className: 'nav-subTitleWrap',
               },
               {
@@ -154,39 +178,43 @@ const config = {
                 to: '/dev/react',
               },
               {
-                type: 'html',
-                value: '<div class="nav-subTitle">안드로이드</div>',
-                className: 'nav-subTitleWrap',
+                label: 'monorepo',
+                to: '/dev/monorepo',
               },
+              // {
+              //   type: 'html',
+              //   value: '<div class="nav-subTitle">안드로이드</div>',
+              //   className: 'nav-subTitleWrap',
+              // },
               {
                 label: 'Kotlin',
                 to: '/dev/react',
               },
-              {
-                type: 'html',
-                value: '<div class="nav-subTitle">IOS</div>',
-                className: 'nav-subTitleWrap',
-              },
+              // {
+              //   type: 'html',
+              //   value: '<div class="nav-subTitle">IOS</div>',
+              //   className: 'nav-subTitleWrap',
+              // },
               {
                 label: '스위프트',
                 to: '/dev/react',
               },
-              {
-                type: 'html',
-                value: '<div class="nav-subTitle">크로스플랫폼</div>',
-                className: 'nav-subTitleWrap',
-              },
+              // {
+              //   type: 'html',
+              //   value: '<div class="nav-subTitle">크로스플랫폼</div>',
+              //   className: 'nav-subTitleWrap',
+              // },
               {
                 label: 'Flutter',
                 to: '/dev/react',
               },
               {
-                label: 'ReactNative',
-                to: '/dev/react',
+                label: '기타',
+                to: '/dev/etc',
               },
               {
                 type: 'html',
-                value: '<div class="nav-subTitle">서버</div>',
+                value: '<div class="nav-subTitle">백엔드</div>',
                 className: 'nav-subTitleWrap',
               },
               {
@@ -209,7 +237,7 @@ const config = {
             position: 'left',
           },
           {
-            to: '/dev/react',
+            to: '/dev/etc',
             label: '기타',
             position: 'left',
           },
@@ -221,7 +249,7 @@ const config = {
         ],
       },
       prism: {
-        theme: lightCodeTheme,
+        theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),
