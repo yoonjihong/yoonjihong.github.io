@@ -117,7 +117,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        // disableSwitch: true,
+        disableSwitch: true,
       },
       algolia: {
         // 알골리아에서 제공한 appId를 사용하세요.
@@ -181,29 +181,14 @@ const config = {
                 label: 'monorepo',
                 to: '/dev/monorepo',
               },
-              // {
-              //   type: 'html',
-              //   value: '<div class="nav-subTitle">안드로이드</div>',
-              //   className: 'nav-subTitleWrap',
-              // },
               {
                 label: 'Kotlin',
                 to: '/dev/react',
               },
-              // {
-              //   type: 'html',
-              //   value: '<div class="nav-subTitle">IOS</div>',
-              //   className: 'nav-subTitleWrap',
-              // },
               {
                 label: '스위프트',
                 to: '/dev/react',
               },
-              // {
-              //   type: 'html',
-              //   value: '<div class="nav-subTitle">크로스플랫폼</div>',
-              //   className: 'nav-subTitleWrap',
-              // },
               {
                 label: 'Flutter',
                 to: '/dev/react',
