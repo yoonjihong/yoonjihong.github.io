@@ -157,37 +157,29 @@ const config = {
                 value: '<div class="nav-subTitle">프론트엔드</div>',
                 className: 'nav-subTitleWrap',
               },
+              // {
+              //   label: 'Html',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   label: 'Css',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   label: 'Javascript',
+              //   to: '/dev/js-ts',
+              // },
+              // {
+              //   label: 'Typescript',
+              //   to: '/dev/js-ts',
+              // },
+              // {
+              //   label: 'React',
+              //   to: '/dev/react',
+              // },
               {
-                label: 'Js/Ts',
-                to: '/dev/js-ts',
-              },
-              {
-                label: 'React',
-                to: '/dev/react',
-              },
-              {
-                label: 'HTML',
-                to: '/dev/react',
-              },
-              {
-                label: 'CSS',
-                to: '/dev/react',
-              },
-              {
-                label: 'Capacitor',
-                to: '/dev/react',
-              },
-              {
-                label: 'monorepo',
+                label: 'Monorepo',
                 to: '/dev/monorepo',
-              },
-              {
-                label: 'Kotlin',
-                to: '/dev/react',
-              },
-              {
-                label: '스위프트',
-                to: '/dev/react',
               },
               {
                 label: 'Flutter',
@@ -197,23 +189,35 @@ const config = {
                 label: '기타',
                 to: '/dev/etc',
               },
-              {
-                type: 'html',
-                value: '<div class="nav-subTitle">백엔드</div>',
-                className: 'nav-subTitleWrap',
-              },
-              {
-                label: 'AWS',
-                to: '/dev/react',
-              },
-              {
-                label: 'Docker',
-                to: '/dev/react',
-              },
-              {
-                label: 'NestJs',
-                to: '/dev/react',
-              },
+              // {
+              //   label: 'Capacitor',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   label: 'Kotlin',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   label: '스위프트',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   type: 'html',
+              //   value: '<div class="nav-subTitle">백엔드</div>',
+              //   className: 'nav-subTitleWrap',
+              // },
+              // {
+              //   label: 'AWS',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   label: 'Docker',
+              //   to: '/dev/react',
+              // },
+              // {
+              //   label: 'NestJs',
+              //   to: '/dev/react',
+              // },
             ],
           },
           {

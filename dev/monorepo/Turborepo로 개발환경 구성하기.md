@@ -2,7 +2,8 @@
 slug: Turborepo로개발환경구성하기
 title: Turborepo로 개발환경 구성하기
 authors: [yjh]
-tags: [코드, 컨벤션, 최적화]
+tags: [Turborepo, 모노레포, 개발환경, Vercel, NextJs]
+date: 2022-06-09
 ---
 
 <div className="preview">
@@ -14,11 +15,9 @@ tags: [코드, 컨벤션, 최적화]
 
 ## Turborepo란?
 
-Turborepo는 대규모 모노레포 프로젝트 관리에서 오는 피로감과 부수적인 툴링에 대한 부담을 줄이면서,  
-Google이나 Facebook과 같은 큰 기업에서 사용하는 수준의 개발 경험을 주는 데 포커싱한, Vercel에서  
+Turborepo는 대규모 모노레포 프로젝트 관리에서 오는 피로감과 부수적인 툴링에 대한 부담을 줄이면서,
+Google이나 Facebook과 같은 큰 기업에서 사용하는 수준의 개발 경험을 주는 데 포커싱한, Vercel에서
 개발 및 운영하고 있는 JavaScript/TypeScript를 위한 모노레포 빌드 시스템이다.
-
-<br />
 
 ## Turborepo의 특징
 

@@ -2,7 +2,8 @@
 slug: Nx로React개발환경구성하기
 title: Nx로 React 개발환경 구성하기
 authors: [yjh]
-tags: [코드, 컨벤션, 최적화]
+tags: [Nx, 모노레포, 개발환경, React]
+date: 2022-06-08
 ---
 
 <div className="preview">
