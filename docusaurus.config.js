@@ -191,7 +191,7 @@ const config = {
               },
               {
                 label: 'Flutter',
-                to: '/dev/react',
+                to: '/dev/flutter',
               },
               {
                 label: '기타',
