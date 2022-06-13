@@ -307,6 +307,12 @@ h6 {
   background: #f2f3f7;
   padding: 0.4rem 0.6rem 0.35rem;
   border-radius: 0.3rem;
+  transition: 0.1s;
+}
+
+.blog-wrapper main > article > footer ul a:hover {
+  background: var(--primary);
+  color: white;
 }
 
 .blog-wrapper main > article > footer ul a::before {
