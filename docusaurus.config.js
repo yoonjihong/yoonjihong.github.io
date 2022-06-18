@@ -4,14 +4,23 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const makeBlog = key => {
+  return [
+    '@docusaurus/plugin-content-blog',
+    {
+      ...sideBarOption,
+      id: key,
+      routeBasePath: 'dev/' + key,
+      path: './dev/' + key,
+      authorsMapPath: '../authors.yml',
+    },
+  ];
+};
+
 const sideBarOption = {
   blogSidebarTitle: '최근 게시물',
   blogSidebarCount: 10,
   postsPerPage: 10,
-  // blogListComponent: '@theme/BlogListPage',
-  // blogPostComponent: '@theme/BlogPostPage',
-  // blogTagsListComponent: '@theme/BlogTagsListPage',
-  // blogTagsPostsComponent: '@theme/BlogTagsPostsPage',
 };
 
 /** @type {import('@docusaurus/types').Config} */
@@ -51,66 +60,12 @@ const config = {
   ],
 
   plugins: [
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        ...sideBarOption,
-        id: 'flutter-blog',
-        routeBasePath: 'dev/flutter',
-        path: './dev/flutter',
-        authorsMapPath: '../authors.yml',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        ...sideBarOption,
-        id: 'monorepo',
-        routeBasePath: 'dev/monorepo',
-        path: './dev/monorepo',
-        authorsMapPath: '../authors.yml',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        ...sideBarOption,
-        id: 'jsts-blog',
-        routeBasePath: 'dev/js-ts',
-        path: './dev/js-ts',
-        authorsMapPath: '../authors.yml',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        ...sideBarOption,
-        id: 'react-blog',
-        routeBasePath: 'dev/react',
-        path: './dev/react',
-        authorsMapPath: '../authors.yml',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        ...sideBarOption,
-        id: 'swift-blog',
-        routeBasePath: 'dev/swift',
-        path: './dev/swift',
-        authorsMapPath: '../authors.yml',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-blog',
-      {
-        ...sideBarOption,
-        id: 'etc',
-        routeBasePath: 'dev/etc',
-        path: './dev/etc',
-        authorsMapPath: '../authors.yml',
-      },
-    ],
+    makeBlog('flutter'),
+    makeBlog('monorepo'),
+    makeBlog('ts'),
+    makeBlog('js'),
+    makeBlog('etc'),
+    makeBlog('nodejs'),
   ],
 
   themeConfig:
@@ -153,30 +108,9 @@ const config = {
             className: 'nav-devMenu',
             items: [
               {
-                type: 'html',
-                value: '<div class="nav-subTitle">프론트엔드</div>',
-                className: 'nav-subTitleWrap',
+                label: 'Nodejs',
+                to: '/dev/nodejs',
               },
-              // {
-              //   label: 'Html',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   label: 'Css',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   label: 'Javascript',
-              //   to: '/dev/js-ts',
-              // },
-              // {
-              //   label: 'Typescript',
-              //   to: '/dev/js-ts',
-              // },
-              // {
-              //   label: 'React',
-              //   to: '/dev/react',
-              // },
               {
                 label: 'Monorepo',
                 to: '/dev/monorepo',
@@ -189,35 +123,6 @@ const config = {
                 label: '기타',
                 to: '/dev/etc',
               },
-              // {
-              //   label: 'Capacitor',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   label: 'Kotlin',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   label: '스위프트',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   type: 'html',
-              //   value: '<div class="nav-subTitle">백엔드</div>',
-              //   className: 'nav-subTitleWrap',
-              // },
-              // {
-              //   label: 'AWS',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   label: 'Docker',
-              //   to: '/dev/react',
-              // },
-              // {
-              //   label: 'NestJs',
-              //   to: '/dev/react',
-              // },
             ],
           },
           {

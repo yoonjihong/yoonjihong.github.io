@@ -596,6 +596,12 @@ blockquote a {
 .table-of-contents__link--active,
 .table-of-contents__link--active code {
   color: var(--primary);
+  display: inline-block;
+  background: var(--primary);
+  opacity: 1;
+  color: white;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.5rem 0.05rem;
 }
 
 .blog-post-page .preview {
