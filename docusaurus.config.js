@@ -99,7 +99,7 @@ const config = {
       },
       navbar: {
         title: '제목 없음',
-        hideOnScroll: true,
+        // hideOnScroll: true,
         items: [
           {
             to: '/dev/flutter',

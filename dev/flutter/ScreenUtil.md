@@ -51,7 +51,7 @@ ScreenUtilInit(
 
 ### 사이즈 단위
 
-```
+```javascript
 .w - 디자인 사이즈 기준 [가로] 길이
 .h - 디자인 사이즈 기준 [세로] 길이
 .sp - 디자인 사이즈 기준 [폰트] 크기
@@ -80,3 +80,4 @@ Container(
 ```
 
 <!-- 비타민 가품비율 구글링 -->
+<!-- https://nomaruhan.tistory.com/13 -->
