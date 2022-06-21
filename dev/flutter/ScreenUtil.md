@@ -79,5 +79,10 @@ Container(
 )
 ```
 
-<!-- 비타민 가품비율 구글링 -->
 <!-- https://nomaruhan.tistory.com/13 -->
+
+<!-- 그리드 뷰어 사용법 -->
+<!-- https://velog.io/@adbr/flutter-GridView-%EC%A0%95%EB%A6%AC#-gridview-widget-%EC%98%88%EC%A0%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EC%93%B0%EC%9D%B8-%ED%8A%B9%EC%A7%95 -->
+<!-- Hero 위젯 사용법 -->
+<!-- border radius 사용법 -->
+<!-- box-shadow 사용법 -->

@@ -65,6 +65,7 @@ const config = {
     makeBlog('ts'),
     makeBlog('js'),
     makeBlog('etc'),
+    makeBlog('react'),
     makeBlog('nodejs'),
   ],
 
@@ -108,6 +109,10 @@ const config = {
             className: 'nav-devMenu',
             items: [
               {
+                label: 'React',
+                to: '/dev/react',
+              },
+              {
                 label: 'Nodejs',
                 to: '/dev/nodejs',
               },
@@ -125,16 +130,16 @@ const config = {
               },
             ],
           },
-          {
-            to: '/dev/react',
-            label: '디자인',
-            position: 'left',
-          },
-          {
-            to: '/dev/etc',
-            label: '기타',
-            position: 'left',
-          },
+          // {
+          //   to: '/dev/react',
+          //   label: '디자인',
+          //   position: 'left',
+          // },
+          // {
+          //   to: '/dev/etc',
+          //   label: '기타',
+          //   position: 'left',
+          // },
           {
             href: 'https://github.com/yoonjihong',
             label: '깃허브',

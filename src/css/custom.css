@@ -9,7 +9,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --primary: hsl(226, 100%, 62%);
+  /* --primary: hsl(226, 100%, 62%); */
+  --primary: #646cff;
   --bg: rgb(242, 243, 247);
   --ifm-color-primary: #000;
   --ifm-color-primary-dark: #29784c;
@@ -74,6 +75,7 @@ h1,
 h2,
 h3 {
   font-family: 'gm' !important;
+  font-family: 'Noto Sans KR', sans-serif !important;
 }
 
 h4,
@@ -279,7 +281,7 @@ h6 {
 
 .blog-wrapper main > article > header > h1,
 .blog-wrapper main > article > header > h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: normal;
   margin-bottom: 0.1rem;
 }
@@ -522,17 +524,27 @@ body
 
 #post-content .preview + h2 {
   padding-top: 0 !important;
+  border-top: none !important;
+}
+
+.markdown > h3 {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem !important;
+  margin-top: 0.8rem;
 }
 
 .markdown > h2 {
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
   padding-top: 22px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 2rem !important;
+  margin-top: 2rem !important;
 }
 
 .markdown > h3 {
   margin-bottom: 0.3rem;
-  font-size: 19px;
+  font-size: 1.4rem;
 }
 
 .markdown p {
@@ -566,13 +578,22 @@ blockquote a {
   margin: 0.4rem 0;
 }
 
+em {
+  color: var(--primary);
+  font-style: normal;
+}
+
 .markdown p code {
   font-family: 'gm';
-  background: #282a36;
-  background: var(--bg);
-  padding: 0rem 0.4rem 0rem;
-  line-height: 1.7;
-  border-radius: 0.2rem;
+  /* background: #282a36; */
+  /* background: var(--bg); */
+  background: none;
+  /* padding: 0rem 0.4rem 0rem; */
+  font-size: 14px;
+  padding: 0;
+  /* line-height: 1.7; */
+  /* border-radius: 0.2rem; */
+  color: var(--primary);
   /* color: var(--primary); */
 }
 
@@ -641,7 +662,7 @@ blockquote a {
 
 .markdown img {
   margin: 1rem 0;
-  border-radius: 0.5rem;
+  border-radius: 11px !important;
 }
 
 #__docusaurus > div.main-wrapper > div > div > main > article > footer > div {
@@ -650,4 +671,40 @@ blockquote a {
 
 .blog-post-page .markdown p {
   /* line-height: 1.6; */
+}
+
+.table-of-contents__left-border {
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.table-of-contents > li > ul,
+.table-of-contents > li > ul > li {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.table-of-contents > li > ul > li a::before {
+  /* content: '- '; */
+}
+
+hr {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 2rem 0 0;
+}
+
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module {
+  margin-bottom: 3rem !important;
+  border-radius: 11px !important;
+  overflow: hidden;
+  margin-top: 1rem !important;
+}
+
+.markdown ul,
+.markdown ol {
+  margin-bottom: 0rem !important;
+}
+
+.markdown code {
+  background: #2a2d3e;
+  padding: 14px 24px;
 }
