@@ -539,7 +539,7 @@ body
   padding-top: 22px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 2rem !important;
-  margin-top: 2rem !important;
+  margin-top: 3rem !important;
 }
 
 .markdown > h3 {
@@ -693,7 +693,7 @@ hr {
 }
 
 .codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module {
-  margin-bottom: 3rem !important;
+  /* margin-bottom: 3rem !important; */
   border-radius: 11px !important;
   overflow: hidden;
   margin-top: 1rem !important;
@@ -707,4 +707,11 @@ hr {
 .markdown code {
   background: #2a2d3e;
   padding: 14px 24px;
+}
+
+.markdown > a {
+  color: var(--primary);
+}
+
+.markdown > a::after {
 }

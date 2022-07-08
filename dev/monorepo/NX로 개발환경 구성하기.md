@@ -41,7 +41,7 @@ Ok to proceed? (y) y
 ## Next앱 추가
 
 ```
-// Next 패키시 추가
+// Next 패키지 추가
 yarn add --dev @nrwl/next
 
 // Next 앱 추가

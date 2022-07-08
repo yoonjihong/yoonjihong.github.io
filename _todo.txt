@@ -1,1 +1,46 @@
 nextjs _document, _app의 역할
+
+JavaScript
+1. 번들어의 이해
+https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
+
+React
+1. cra 시작하기
+2. Typescript로 시작하기
+3. 실행 포트 변경하기
+4. hook -> usestate, useEffect, 
+5. 커스텀 훅
+6. api -> swr, reactQuery
+7. 렌더링 최적화 -> useMemo, memo, useCallback 등등
+8. Production모드로 배포, .env
+9. CI/CD
+10. 상태관리
+https://maeng2418.github.io/react/state_management/
+
+Nextjs
+1. https://kyounghwan01.github.io/blog/React/next/mui-styled/#%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%89%E1%85%A6%E1%84%90%E1%85%B5%E1%86%BC
+
+
+Flutter
+1. 릴리즈 모드 실행
+2. 보더 라디우스 사용법
+3. getx패턴에 페이지 이동 안되는거(컨트롤러 바인딩된 페이지)
+4. router 페이지 이동 방법 정리 - https://dev-yakuza.posstree.com/ko/flutter/getx/route/
+5. https://jacobko.info/flutter/flutter-17/ Getx
+
+기타
+1. .vscode config
+2. https://velog.io/@j1min/Vscode-Prettier-%EC%A0%81%EC%9A%A9-%EC%95%88%EB%90%A8-%EA%B3%A0%EC%B9%98%EB%8A%94%EB%B2%95
+3. CS란?, 반복되는 CS
+4. 지라
+https://spoqa.github.io/2022/06/15/how-to-use-jira-in-spoqa.html
+5. 사이드프로젝트`
+https://brunch.co.kr/@s0ojin/36
+
+
+https://mugon-devlog.tistory.com/73
+uri와 url의 차이점
+
+
+네트워크
+1. https, 보안 등등
