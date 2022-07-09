@@ -5,9 +5,9 @@ JavaScript
 https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 
 React
-1. cra 시작하기
-2. Typescript로 시작하기
-3. 실행 포트 변경하기
+1. cra 시작하기 -- clear
+2. Typescript로 시작하기 -- clear
+3. 실행 포트 변경하기 -- clear
 4. hook -> usestate, useEffect, 
 5. 커스텀 훅
 6. api -> swr, reactQuery
@@ -16,6 +16,9 @@ React
 9. CI/CD
 10. 상태관리
 https://maeng2418.github.io/react/state_management/
+
+Typescript
+1. interface vs type - https://yceffort.kr/2021/03/typescript-interface-vs-type
 
 Nextjs
 1. https://kyounghwan01.github.io/blog/React/next/mui-styled/#%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%89%E1%85%A6%E1%84%90%E1%85%B5%E1%86%BC
