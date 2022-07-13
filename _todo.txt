@@ -3,19 +3,31 @@ nextjs _document, _app의 역할
 JavaScript
 1. 번들어의 이해
 https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
+2. DOM이란
+3. 함수형 클래스형 차이점
+
 
 React
-1. cra 시작하기 -- clear
-2. Typescript로 시작하기 -- clear
-3. 실행 포트 변경하기 -- clear
-4. hook -> usestate, useEffect, 
-5. 커스텀 훅
-6. api -> swr, reactQuery
-7. 렌더링 최적화 -> useMemo, memo, useCallback 등등
-8. Production모드로 배포, .env
-9. CI/CD
-10. 상태관리
+1. 훅의 종류 및 사용법
+2. 커스텀 훅
+3. 라이프사이클관리?(생명주기?)
+4. api -> swr, reactQuery
+5. 렌더링 최적화 -> useMemo, memo, useCallback 등등
+6. Production모드로 배포, .env
+7. CI/CD
+8. 상태관리
 https://maeng2418.github.io/react/state_management/
+https://techblog.woowahan.com/8311/
+
+11. Forwarding Refs
+12. state 변경 방법
+setQs(v => {
+            v.pagination.page = page;
+
+            return v;
+          });
+
+
 
 Typescript
 1. interface vs type - https://yceffort.kr/2021/03/typescript-interface-vs-type

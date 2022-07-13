@@ -1,0 +1,200 @@
+---
+slug: hook이란
+title: Hook 이란?
+authors: [yjh]
+tags: [리액트, React, Hook, Custom Hook, Class]
+draft: true
+---
+
+<div className="preview">리액트의 HOOK에 대해 알아보자. State, Effect등</div>
+
+<!--truncate-->
+
+Hook은 React 16.8부터 추가되었다. Hook을 사용하면 기존 클래스형 컴포넌트에서만 사용가능하던 상태관리, 라이프사이클 메소드 등의 여러 기능을 사용할 수 있다.
+
+> 16.8이전 버전에서는 함수형 컴포넌트 내에서 상태관리가 불가능했다
+> 라이프사이클 메소드 - componentDidMount, componentWillUnmount, componentDidUpdate
+
+<!-- ## Hook이란? -->
+
+## Hook 사용 규칙
+
+Hook사용 규칙을 지켜야 정상적으로 실행되며 코드가 꼬이지 않는다고 한다.
+
+<br />
+
+- 최상위에서만 호출해야 한다.
+- React 함수 내에서만 호출해야 한다.
+- Custom Hook을 만들땐 반드시 앞에 use를 붙여야한다.  
+   (공홈 - Hook 규칙이 적용되는지를 파악할 수 있기 때문)
+
+## Hook의 장점
+
+<!-- 클래스형 컴포넌트에 비해 `코드가 간결해지고 Custom Hook을 사용해 로직 재활용이 가능`해진다.
+클래스형 컴포넌트에서 로직 재활용을 위해선 HOC를 사용했다. -->
+
+<br />
+
+- 코드가 간결해진다.
+- 가독성이 좋아진다.
+- HOC 헬을 벗어 날 수 있다.
+- 불필요한 것 같은 코드를 적을 필요가 없다.
+
+<br />
+
+#### 클래스형 컴포넌트 vs 함수형 컴포넌트
+
+CASE 1 : 컴포넌트가 마운트 됐을 때와 검색 값이 변경됐을 때 API호출 후 검색 리스트를 보여줘야함
+CASE 2 : 로직 재사용
+
+<br />
+
+#### CASE 1
+
+클래스형 컴포넌트
+
+```jsx
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      data: [],
+      keyword: '',
+    };
+  }
+
+  componentDidMount() {
+    this.fetch('');
+  }
+
+  componentDidUpdate() {
+    this.fetch(this.state.keyword);
+  }
+
+  async fetch(keyword) {
+    const data = await fetchApi({ url: `/lookup?keyword=${keyword}` });
+
+    this.setState({
+      data,
+      keyword: this.state.keyword,
+    });
+  }
+
+  render() {
+    return (
+      <>
+        {data.map((v, i) => (
+          <div key={i}>{v.title}</div>
+        ))}
+      </>
+    );
+  }
+}
+```
+
+<br />
+
+함수형 컴포넌트
+
+```jsx
+const Home = () => {
+  // Hook은 여러번 사용이 가능해 클래스와달리 목적별로 분리 가능
+  const [data, setData] = useState([]);
+  const [keyword, setKeyword] = useState({
+    data: [],
+    keyword: '',
+  });
+
+  useEffect(() => {
+    async () => {
+      const data = await fetchApi({ url: `/lookup?keyword=${keyword}` });
+      setData(data);
+    };
+  }, [keyword]);
+
+  return (
+    <>
+      {data.map((v, i) => (
+        <div key={i}>{v.title}</div>
+      ))}
+    </>
+  );
+};
+```
+
+<br />
+
+`WIN.함수형 컴포넌트` : 클래스에비해 함수형 컴포넌트가 훨씬 간결하고 이해하기 쉽다.
+
+<br />
+
+#### CASE 2
+
+클래스형 컴포넌트
+
+```jsx
+const HocHell = () => {
+  return (
+    <WithA>
+      <WithB>
+        <WithC>
+          <Component />
+        </WithC>
+      </WithB>
+    </WithA>
+  );
+};
+```
+
+<br />
+
+함수형 컴포넌트
+
+```jsx
+const Hook = () => {
+  const widthA = useWidthA();
+  const widthB = useWidthB();
+  const widthC = useWidthC();
+
+  return <Component withA={withA} withA={withA} withA={withA} />;
+};
+```
+
+<br />
+
+`WIN.함수형 컴포넌트` : 누가봐도 함수형 컴포넌트가 깔끔함
+
+<!-- https://hun-dev.tistory.com/28 -->
+
+<!-- > <a href="#">Hook의 종류</a> -->
+
+<!-- - useState
+  함수형 컴포넌트에서도 가변적인 상태를 가질 수 있게 해줌
+
+- useEffect
+  컴포넌트가 렌더링될 때마다 원하는 작업을 할 수 있음
+
+- useCallback 성능최적화가 필요할때 사용된다. 함수를 필요한 시점에만 재생성한다.
+  첫 번째 인자 값에 함수를, 두 번째 인자 값엔 어떤 값이 변경되었을 때 함수를 다시 생성해야
+  하는지 명시해 주어야 한다.
+
+- useMemo
+  함수형 컴포넌트 내부에서 발생하는 연산을 최적화할 수 있다.
+  기본적으로 렌더링 시 원하는 값이 바뀌었을때만 다시 연산하고 그렇지 않을경우 이전에 연산된 값을 다시 사용함.
+
+- useRef
+  함수형 컴포넌트에서 ref를 쉽게 사용할 수 있도록 한다.
+
+- useReducer
+  useState를 더 디테일? 하게 사용할 수 있다. -->
+
+<!-- https://devbirdfeet.tistory.com/52 -->
+<!-- https://velog.io/@goyou123/React-Hooks-%EC%B4%9D%EC%A0%95%EB%A6%AC -->
+<!-- https://velog.io/@goyou123/Custom-Hook -->
+<!-- https://lelana.tistory.com/146 -->
+<!-- https://studyingych.tistory.com/59 -->
+<!-- https://codingbroker.tistory.com/23 -->
+<!-- https://ykss.netlify.app/react/hooks/ -->
+<!-- https://velog.io/@yangddu/React-Hook -->
+<!-- https://surviveasdev.tistory.com/entry/React-hook%EC%9D%B4-%EB%82%98%EC%98%A8-%EC%9D%B4%EC%9C%A0%EC%99%80-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%95%BC-%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0 -->

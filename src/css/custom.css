@@ -358,6 +358,11 @@ div.main-wrapper
   color: #7a7c85;
 }
 
+header h1,
+.blog-list-page h2 a {
+  font-family: 'gm' !important;
+}
+
 .previewBox {
   color: #7a7c85;
   font-size: 0.88rem;
@@ -561,11 +566,38 @@ body
 blockquote a,
 blockquote {
   color: rgba(0, 0, 0, 0.5);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+  border-left: none;
+  position: relative;
+}
+
+blockquote a::after {
+  content: '>';
+  display: inline-block;
+  margin-left: 0.4rem;
+  transform: translateY(0.5px);
+}
+
+blockquote {
+  padding-left: 1rem;
+}
+
+blockquote::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 94%;
+  background: var(--primary);
+  opacity: 0.5;
 }
 
 blockquote a {
-  color: var(--primary);
+  color: var(--primary) !important;
 }
 
 .markdown code {
@@ -696,12 +728,12 @@ hr {
   margin-bottom: 0.4rem !important;
   border-radius: 11px !important;
   overflow: hidden;
-  margin-top: 1rem !important;
+  margin-top: 0.4rem !important;
 }
 
 .codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module
   + * {
-  margin-top: 1.3rem;
+  margin-top: 1.2rem;
 }
 
 .markdown ul,
@@ -716,6 +748,12 @@ hr {
 
 .markdown > a {
   color: var(--primary);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.markdown a:hover {
+  opacity: 0.7;
 }
 
 .markdown > a::after {
@@ -725,4 +763,25 @@ h5 > span {
   font-size: 0.8rem;
   font-weight: normal;
   opacity: 0.6;
+}
+
+h2 > span {
+  font-size: 0.8rem;
+  font-weight: normal;
+  /* opacity: 0.6; */
+}
+
+@media (min-width: 1000px) {
+  .tags_node_modules-\@docusaurus-theme-classic-lib-theme-TagsListInline-styles-module {
+    width: 300px;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    margin: 0;
+  }
+
+  .tags_node_modules-\@docusaurus-theme-classic-lib-theme-TagsListInline-styles-module
+    li {
+    margin-top: 0.4rem;
+  }
 }
