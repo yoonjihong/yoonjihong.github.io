@@ -699,6 +699,11 @@ hr {
   margin-top: 1rem !important;
 }
 
+.codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module
+  + * {
+  margin-top: 1.3rem;
+}
+
 .markdown ul,
 .markdown ol {
   margin-bottom: 0rem !important;
