@@ -78,6 +78,10 @@ h3 {
   font-family: 'Noto Sans KR', sans-serif !important;
 }
 
+h3 {
+  font-size: 1rem;
+}
+
 h4,
 h5,
 h6 {
@@ -711,8 +715,19 @@ em {
 
 .table-of-contents > li > ul,
 .table-of-contents > li > ul > li {
-  padding-left: 0;
-  margin-left: 0;
+  /* padding-left: 0;
+  margin-left: 0; */
+  position: relative;
+}
+
+.table-of-contents > li > ul > li::before {
+  content: '-';
+  display: inline;
+  position: absolute;
+  left: -1rem;
+  top: 3px;
+  opacity: 0.3;
+  font-size: 0.7rem;
 }
 
 .table-of-contents > li > ul > li a::before {
@@ -772,16 +787,23 @@ h2 > span {
 }
 
 @media (min-width: 1000px) {
-  .tags_node_modules-\@docusaurus-theme-classic-lib-theme-TagsListInline-styles-module {
+  .blog-post-page
+    .tags_node_modules-\@docusaurus-theme-classic-lib-theme-TagsListInline-styles-module {
     width: 300px;
     position: fixed;
-    left: 2rem;
-    bottom: 2rem;
+    right: 2rem;
+    bottom: 5.1rem;
     margin: 0;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: flex-end !important;
   }
 
-  .tags_node_modules-\@docusaurus-theme-classic-lib-theme-TagsListInline-styles-module
+  .blog-post-page
+    .tags_node_modules-\@docusaurus-theme-classic-lib-theme-TagsListInline-styles-module
     li {
     margin-top: 0.4rem;
+    margin-right: 0;
+    margin-left: 0.4rem;
   }
 }
