@@ -5,9 +5,12 @@ JavaScript
 https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 2. DOM이란
 3. 함수형 클래스형 차이점
+4. scope, 호이스팅 등등
+5. 웹 동작원리
 
 
 React
+https://ljtaek2.tistory.com/142
 1. 훅의 종류 및 사용법
 2. 커스텀 훅
 3. 라이프사이클관리?(생명주기?)
@@ -26,7 +29,7 @@ setQs(v => {
 
             return v;
           });
-
+13. 렌더링 시 key 최적화
 
 
 Typescript
