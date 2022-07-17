@@ -807,3 +807,7 @@ h2 > span {
     margin-left: 0.4rem;
   }
 }
+
+p code {
+  display: inline !important;
+}

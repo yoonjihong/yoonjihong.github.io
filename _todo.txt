@@ -9,6 +9,10 @@ https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%
 5. 웹 동작원리
 
 
+Git
+1. gitFlow vs Trunk-based
+
+
 React
 https://ljtaek2.tistory.com/142
 1. 훅의 종류 및 사용법
