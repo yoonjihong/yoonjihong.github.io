@@ -16,36 +16,48 @@ draft: true
 >   Hook애 대해 알아보기
 > </a>
 
-## Hook 종류
+## useState
 
-Hook useState, useEffect, useCallback, useMemo, useReducer정도가 있다.
+<!-- https://velog.io/@devmag/React-state-%EB%B3%80%EA%B2%BD-%EC%8B%9C-%EC%99%9C-useState-setState%EB%A5%BC-%EC%93%B0%EB%8A%94%EA%B0%80 -->
 
-## Hook 사용법
+```javascript
+// 기본적인 문자열
+const [state, setState] = useState('');
 
-### useState
+setState('change');
+
+// 객체
+const [state, setState] = useState({
+  title: '',
+  content: '',
+});
+
+setState({
+  ...state,
+  content: 'asdfjaksldjksf',
+});
+```
+
+<br />
+
+## useEffect
 
 asdfkjalksdfjaklsdjflks
 
 <br />
 
-### useEffect
+## useCallback
 
 asdfkjalksdfjaklsdjflks
 
 <br />
 
-### useCallback
+## useMemo
 
 asdfkjalksdfjaklsdjflks
 
 <br />
 
-### useMemo
-
-asdfkjalksdfjaklsdjflks
-
-<br />
-
-### useReducer
+## useReducer
 
 asdfkjalksdfjaklsdjflks

@@ -16,6 +16,8 @@ Git
 React
 https://ljtaek2.tistory.com/142
 1. 훅의 종류 및 사용법
+1-1. 상태 끌어올리기?
+1-2. 상태 불변성
 2. 커스텀 훅
 3. 라이프사이클관리?(생명주기?)
 4. api -> swr, reactQuery
