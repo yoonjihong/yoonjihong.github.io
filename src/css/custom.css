@@ -571,7 +571,7 @@ blockquote a,
 blockquote {
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   border-left: none;
   position: relative;
 }
@@ -743,12 +743,12 @@ hr {
   margin-bottom: 0.4rem !important;
   border-radius: 11px !important;
   overflow: hidden;
-  margin-top: 0.4rem !important;
+  margin-top: 0.6rem !important;
 }
 
 .codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module
   + * {
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
 
 .markdown ul,

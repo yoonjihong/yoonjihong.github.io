@@ -1,0 +1,119 @@
+---
+slug: 불변성을_지켜야_하는_이유
+title: 불변성을 지켜야 하는 이유
+authors: [yjh]
+tags: [리액트, React, Hook, state]
+draft: true
+---
+
+<div className="preview">리액트에서 불변성을 지켜줘야하는 이유는?</div>
+
+<!--truncate-->
+<!-- https://bohyeon-n.github.io/deploy/react/react_immutable.html -->
+
+리액트에서 불변성을 지켜줘야하는 이유를 알아보자
+
+> <a href="/dev/react/hook이란" target="_blank">
+>   Hook애 대해 알아보기
+> </a>
+
+## useState
+
+기본적으로 state 변경 시 아래 코드와 같이 불변성을 지켜줘야한다.
+
+```js
+setState([...state, newValue]);
+```
+
+> 불변성이란 어떤값을 직접적으로 변경하지 않고 새로운 값을 만드는 것을 말한다.
+
+<br />
+
+아래 코드를보면 userA와 userB가 있다.
+
+```js
+const userA = {
+  name: '호롤롤',
+  phone: '000-0000-0000',
+  address: '대한민국 어딘가',
+};
+
+const userB = userA;
+```
+
+여기서 userA의 name값을 바꾸게되면 userB의 name값도 바뀌게된다.  
+이런 상황은 값을 예측할 수 없게 하거나 예기치 못한 버그를 유발할 수 있기때문에 아래처럼 불변성을 지켜줘야한다.
+
+```js
+const userB = { ...userB };
+```
+
+이렇게 되면 userA의 값 변경이 userB에 영향을 끼치지 않는다. -> 불변성이 잘 지켜졌다.
+
+> spread operator를 사용하여 새로운 객체를 생성했기 때문에 userA와 userB의 참조값이 달라진다.
+
+<br />
+
+spread operator(얕은 복사)를 사용하더라도 객체의 깊이가 깊어지면 똑같은 문제가 생긴다.
+
+```js
+const userA = {
+  name: '호롤롤',
+  phone: '000-0000-0000',
+  address: '대한민국 어딘가',
+  post: ['호', '롤', '롤'],
+};
+
+const userB = { ...userA };
+
+// userA === userB -> false
+// userA.post === userB.post -> true
+```
+
+객체의 깊이가 점점 깊어지면 불변성 유지가 힘들어져 immer와 같은 라이브러리를 사용해 불변성을 유지하기도 한다.
+
+<br />
+
+리액트에서 컴포넌트는 부모 컴포넌트 리렌더링되거나 Props또는 상태값이 변경 됐을때 리렌더링된다.  
+Props와 상태 변경을 감지하기 위해 이전 값과 현재 값을 하나씩 비교하지 않고 성능 최적화를 위해 얕은 비교를 실행한다.
+
+<br />
+
+`때문에 리액트에서 불변변성을 지키는게 중요하다.`
+
+```js
+const [user, setUser] = useState({
+  name: '호롤롤',
+  phone: '000-0000-0000',
+});
+
+user.name = '로로로';
+setState(user);
+```
+
+위와 같이 user.name 값을 바꾸고 setState 실행해 값을 변경했다고 하더라도 기존
+user와 setUser 넘겨준 데이터의 참조 값이 같기 때문에 컴포넌트는 다시 렌더링되지 않는다.
+
+> setUser가 실행되면 현재 값과 전달 받은 값을 비교하게 되는데 이때 앝은 비교를 실행하기때문에 값이 변경되었다고 판단하지 않기때문에 리렌더링되지 않는다.
+
+<!-- https://velog.io/@devmag/React-state-%EB%B3%80%EA%B2%BD-%EC%8B%9C-%EC%99%9C-useState-setState%EB%A5%BC-%EC%93%B0%EB%8A%94%EA%B0%80 -->
+
+```js
+// 기본적인 문자열
+const [state, setState] = useState('');
+
+setState('change');
+
+// 객체
+const [state, setState] = useState({
+  title: '',
+  content: '',
+});
+
+setState(prevState => {
+  return {
+    ...state,
+    content: 'asdfjaksldjksf',
+  };
+});
+```

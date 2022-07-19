@@ -7,6 +7,8 @@ https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%
 3. 함수형 클래스형 차이점
 4. scope, 호이스팅 등등
 5. 웹 동작원리
+6. 원시타입 참조(객체) 타입
+7. es6,es5, spread??
 
 
 Git
@@ -15,6 +17,7 @@ Git
 
 React
 https://ljtaek2.tistory.com/142
+0. react18에서 리액트가 상태 처리하는 방식(배치?)
 1. 훅의 종류 및 사용법
 1-1. 상태 끌어올리기?
 1-2. 상태 불변성

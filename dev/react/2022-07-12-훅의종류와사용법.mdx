@@ -18,25 +18,61 @@ draft: true
 
 ## useState
 
-<!-- https://velog.io/@devmag/React-state-%EB%B3%80%EA%B2%BD-%EC%8B%9C-%EC%99%9C-useState-setState%EB%A5%BC-%EC%93%B0%EB%8A%94%EA%B0%80 -->
+기본적으로 아래와 같이 사용하면되고 사용 시 `불변성`을 꼭 지켜줘야한다.
 
-```javascript
-// 기본적인 문자열
-const [state, setState] = useState('');
+> <a href="/dev/react/불변성을_지켜야_하는_이유" target="_blank">
+>   리액트에서 불변성을 지켜줘야 하는 이유
+> </a>
 
-setState('change');
+<!-- https://berkbach.com/setstate-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-28b207fc81df -->
 
-// 객체
+```js
 const [state, setState] = useState({
-  title: '',
-  content: '',
+  title: '호롤롤로롤',
+  content: '공백',
 });
 
 setState({
   ...state,
-  content: 'asdfjaksldjksf',
+  content: 'ㅋㅋㅋㅋㅋㅋㅋ',
 });
 ```
+
+setState는 비동기적으로 동작한다
+
+<br />
+
+```js
+const [counter, setCounter] = useState(0);
+
+setCounter(counter + 1);
+console.log(counter); // result: 0
+```
+
+<br />
+
+또한 같은 키를 가진 작업이 있을경우 `하나로 합쳐서 마지막에 있는 내용만 처리`한다.
+
+```js
+setCounter(counter + 1);
+setCounter(counter + 1);
+setCounter(counter + 5);
+// 결과값은 5다
+```
+
+<br />
+
+최신 값이 필요하거나 순차 실행이 필요할 땐 setState의 updater 인자를 사용하면된다.  
+`updater에 인자값은 항상 최신 값으로 유지`된다.
+
+```js
+setCounter(prevCounter => prevCounter + 1);
+setCounter(prevCounter => prevCounter + 1);
+setCounter(prevCounter => prevCounter + 5);
+// updater의 인자는 항상 최신 값을 유지하기 때문에 결과값은 7
+```
+
+> updater 사용 시 리액트는 해당 작업들을 하나로 합치는게 아닌 큐에 각각 하나씩 넣고 처리한다.
 
 <br />
 
