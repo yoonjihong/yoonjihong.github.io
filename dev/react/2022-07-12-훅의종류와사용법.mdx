@@ -1,52 +1,63 @@
 ---
-slug: hook의_종류와_사용법
-title: Hook의 종류와 사용법
+slug: hook_사용법_useState
+title: Hook 사용법 - useState
 authors: [yjh]
 tags: [리액트, React, Hook, Custom Hook, Class]
 draft: true
 ---
 
-<div className="preview">Hook의 종류와 사용법에 대해 알아보자</div>
+<div className="preview">useState를 사용하는 방법을 알아보자</div>
 
 <!--truncate-->
 
-자주쓰는 Hook의 종류와 역할, 사용법에 대해 알아보자.
+useState를 사용하는 방법을 알아보자
 
 > <a href="/dev/react/hook이란" target="_blank">
 >   Hook애 대해 알아보기
 > </a>
 
-## useState
+## 사용법
 
-기본적으로 아래와 같이 사용하면되고 사용 시 `불변성`을 꼭 지켜줘야한다.
+기본적으로 아래와 같이 사용하면되고 사용 시엔 `불변성`을 꼭 지켜줘야한다.
 
 > <a href="/dev/react/불변성을_지켜야_하는_이유" target="_blank">
 >   리액트에서 불변성을 지켜줘야 하는 이유
 > </a>
 
 <!-- https://berkbach.com/setstate-%ED%8C%8C%ED%97%A4%EC%B9%98%EA%B8%B0-28b207fc81df -->
+<!-- https://sangcho.tistory.com/entry/Commons-Mistakes-with-React-useState -->
 
 ```js
 const [state, setState] = useState({
   title: '호롤롤로롤',
   content: '공백',
 });
+```
 
+<br />
+
+상태 값 변경은 setState를 사용하면 된다.
+
+```js
 setState({
   ...state,
   content: 'ㅋㅋㅋㅋㅋㅋㅋ',
 });
 ```
 
-setState는 비동기적으로 동작한다
-
 <br />
+
+`setState는 비동기적으로 동작한다.`
 
 ```js
 const [counter, setCounter] = useState(0);
 
 setCounter(counter + 1);
 console.log(counter); // result: 0
+
+useEffect(() => {
+  console.log(counter); // result: 1
+}, [counter]);
 ```
 
 <br />
@@ -57,43 +68,18 @@ console.log(counter); // result: 0
 setCounter(counter + 1);
 setCounter(counter + 1);
 setCounter(counter + 5);
-// 결과값은 5다
+// result: 5
 ```
 
 <br />
 
-최신 값이 필요하거나 순차 실행이 필요할 땐 setState의 updater 인자를 사용하면된다.  
-`updater에 인자값은 항상 최신 값으로 유지`된다.
+`updater에 인자값은 항상 최신 값으로 유지`되기 때문에 최신 값이 필요하거나 순차 실행이 필요할 땐 setState의 updater 인자를 사용하면된다.
 
 ```js
 setCounter(prevCounter => prevCounter + 1);
 setCounter(prevCounter => prevCounter + 1);
 setCounter(prevCounter => prevCounter + 5);
-// updater의 인자는 항상 최신 값을 유지하기 때문에 결과값은 7
+// result: 7
 ```
 
 > updater 사용 시 리액트는 해당 작업들을 하나로 합치는게 아닌 큐에 각각 하나씩 넣고 처리한다.
-
-<br />
-
-## useEffect
-
-asdfkjalksdfjaklsdjflks
-
-<br />
-
-## useCallback
-
-asdfkjalksdfjaklsdjflks
-
-<br />
-
-## useMemo
-
-asdfkjalksdfjaklsdjflks
-
-<br />
-
-## useReducer
-
-asdfkjalksdfjaklsdjflks
