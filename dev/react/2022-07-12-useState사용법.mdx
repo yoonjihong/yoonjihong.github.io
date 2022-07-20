@@ -78,7 +78,7 @@ setCounter(counter + 5);
 
 <br />
 
-`updater에 인자값은 항상 최신 값으로 유지`되기 때문에 최신 값이 필요하거나 순차 실행이 필요할 땐 setState의 updater함수를 전달해서 사용한다.
+`updater에 인자값은 항상 최신 값으로 유지`되기 때문에 최신 값이 필요하거나 순차 실행이 필요할 땐 setState에 updater함수를 전달해서 사용한다.
 
 ```js
 setCounter(prevCounter => prevCounter + 1);
