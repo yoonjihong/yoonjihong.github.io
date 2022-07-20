@@ -9,6 +9,8 @@ https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%
 5. 웹 동작원리
 6. 원시타입 참조(객체) 타입
 7. es6,es5, spread??
+8. https://sustainable-dev.tistory.com/156 -> 자바스크립트에서 불변성이란
+9. immer 사용법 -> 리액트 불변성을 지켜야하는이유에 링크 걸기
 
 
 Git

@@ -552,8 +552,8 @@ body
 }
 
 .markdown > h3 {
-  margin-bottom: 0.3rem;
-  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.2rem;
 }
 
 .markdown p {
@@ -743,12 +743,12 @@ hr {
   margin-bottom: 0.4rem !important;
   border-radius: 11px !important;
   overflow: hidden;
-  margin-top: 0.6rem !important;
+  margin-top: 0.8rem !important;
 }
 
 .codeBlockContainer_node_modules-\@docusaurus-theme-classic-lib-theme-CodeBlock-Container-styles-module
   + * {
-  margin-top: 1rem;
+  margin-top: 0.9rem;
 }
 
 .markdown ul,
