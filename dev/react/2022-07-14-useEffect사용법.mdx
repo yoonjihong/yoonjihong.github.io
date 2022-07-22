@@ -1,0 +1,89 @@
+---
+slug: useEffect_사용법
+title: useEffect 사용 방법
+authors: [yjh]
+tags: [리액트, Hook, useState]
+draft: true
+---
+
+<div className="preview">useEffec와 사용법에 대해 알아보자</div>
+
+<!--truncate-->
+
+## SideEffect 란?
+
+우선 리액트에서 컴포넌트가 렌더링된 이후에 처리 되어야 하는 것 들을 SideEffect라고 한다.  
+대표적으로 API 호출 같은 것들을 SideEffect라고 하는데 API를 호출하고 응답이 돌아올 때 까지 사용자는 아무런 화면도 볼 수 없다.
+
+> `리액트에선 렌더링 할 수 있는 요소는 먼저 렌더링하고 그 외에 작업들은 비동기로 처리하는 것을 권장함`
+
+## useEffect란?
+
+리액트에 함수형 컴포넌트에서 SideEffect를 사용할 수 있게 해주는 기능으로  
+`즉 우리가 useEffect에 넘긴 내용들이 컴포넌트가 렌더링된 이후에 처리될 수 있게 해준다.`
+
+> 리액트에선 useEffect가 실행되는 시점에 이미 DOM이 업데이트 됐음을 보장한다.
+
+## 사용법
+
+useEffect 사용법은 두가지로 정리(Clean Up)이 없는 Effect와 있는 Effect가 있다.
+
+<br />
+
+### 정리(Clean Up)이 없는 Effect
+
+네트워크 리퀘스트, DOM 수동 조작, 로깅 등은 실행 이후 신경 쓸 것이 없기 때문에 정리가 필요 없는 경우다.
+
+```js
+useEffect(() => {
+  console.log('처음 렌더링 및 리렌더링될 때');
+});
+
+useEffect(() => {
+  console.log('처음 렌더링될 때');
+}, []);
+
+useEffect(() => {
+  console.log('2번째 인자 값이 바뀔 때마다 -> keyword 변경 시');
+}, [keyword]);
+```
+
+<br />
+
+### 정리(Clean Up)를 사용하는 Effect
+
+`외부 데이터에 구독(subscription)`을 설정해야 하는 경우 메모리 누수가 발생하지 않도록 정리가 필요하다.
+
+<br />
+
+아래 코드를 보면 컴포넌트가 렌더링된 이후 + keyword가 변결될 때마다 interval을 실행시킨다.
+
+이렇게 되면 interval이 중복 실행되고 컴포넌트가 언마운트 되더라도 interval은 계속
+돌아간다.
+
+```js
+useEffect(() => {
+  setInterval(() => {
+    alert('1초에 한번 씩');
+  }, 1000);
+}, [keyword]);
+```
+
+<br />
+
+이때 클린업 함수를 사용하면된다.  
+`클린업 함수는 컴포넌트가 언마운트될 때 or 의존 값 변경으로 Effect가 실행되기 직전에 실행된다.`
+
+```js
+useEffect(() => {
+  let handle = setInterval(() => {
+    alert('1초에 한번 씩');
+  }, 1000);
+
+  return () => {
+    clearInterval(handle);
+  };
+}, [keyword]);
+```
+
+> 마운트 -> interval 실행 -> keyword 변경 -> 클린 업 함수 실행 -> interval 실행

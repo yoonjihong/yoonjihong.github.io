@@ -1,6 +1,7 @@
 nextjs _document, _app의 역할
 
 JavaScript
+0. 클로저란
 1. 번들어의 이해
 https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 2. DOM이란
@@ -33,6 +34,7 @@ https://maeng2418.github.io/react/state_management/
 https://techblog.woowahan.com/8311/
 11. Forwarding Refs
 13. 렌더링 시 key 최적화
+14. 마운트와 언마운트 https://jongminfire.dev/react-use-effect-%ED%9B%85-%EC%9D%B4%ED%8E%99%ED%8A%B8-%ED%95%A8%EC%88%98-%ED%81%B4%EB%A6%B0%EC%97%85-%ED%95%A8%EC%88%98
 
 
 Typescript
@@ -64,4 +66,5 @@ uri와 url의 차이점
 
 
 네트워크
-1. https, 보안 등등
+1. https, 보안 등등,
+2. 네트워크 리퀘스트 - 단일/다중 리퀘스트 용량차이, http2.0(?) api 요청 개수 제한,
