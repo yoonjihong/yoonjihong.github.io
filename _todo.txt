@@ -1,13 +1,17 @@
 노마드코더, 코딩애플, 드림코딩, 조코딩(애매함), 김버그
 
-nextjs \_document, \_app의 역할
+
 
 css
 https://blinders.tistory.com/93
 reflow, repainting(redraw?) - https://velog.io/@young_pallete/Reflow-Repaint%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
 
-JavaScript 0. 클로저란 0. 인자, 인수, 파람
 
+
+
+JavaScript 
+0. 클로저란 
+0. 인자, 인수, 파람
 1. 번들러의 이해
    https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 2. DOM이란
@@ -19,9 +23,8 @@ JavaScript 0. 클로저란 0. 인자, 인수, 파람
 8. https://sustainable-dev.tistory.com/156 -> 자바스크립트에서 불변성이란
 9. immer 사용법 -> 리액트 불변성을 지켜야하는이유에 링크 걸기
 
-Git
 
-1. gitFlow vs Trunk-based
+
 
 React
 https://ljtaek2.tistory.com/142 0. react18에서 리액트가 상태 처리하는 방식(배치?)
@@ -48,13 +51,27 @@ now. useCallback, memo
 9. Forwarding Refs
 10. 렌더링 시 key 최적화
 
-Typescript
 
+
+
+Typescript
 1. interface vs type - https://yceffort.kr/2021/03/typescript-interface-vs-type
 
-Nextjs
 
+
+
+Nextjs
 1. https://kyounghwan01.github.io/blog/React/next/mui-styled/#%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%89%E1%85%A6%E1%84%90%E1%85%B5%E1%86%BC
+2. nextjs \_document, \_app의 역할
+
+
+
+
+Git
+1. gitFlow vs Trunk-based
+
+
+
 
 Flutter
 
@@ -64,8 +81,11 @@ Flutter
 4. router 페이지 이동 방법 정리 - https://dev-yakuza.posstree.com/ko/flutter/getx/route/
 5. https://jacobko.info/flutter/flutter-17/ Getx
 
-기타
 
+
+
+
+기타
 1. .vscode config
 2. https://velog.io/@j1min/Vscode-Prettier-%EC%A0%81%EC%9A%A9-%EC%95%88%EB%90%A8-%EA%B3%A0%EC%B9%98%EB%8A%94%EB%B2%95
 3. CS란?, 반복되는 CS
@@ -77,7 +97,16 @@ Flutter
 https://mugon-devlog.tistory.com/73
 uri와 url의 차이점
 
-네트워크
 
+
+
+
+네트워크
 1. https, 보안 등등,
 2. 네트워크 리퀘스트 - 단일/다중 리퀘스트 용량차이, http2.0(?) api 요청 개수 제한,
+
+
+
+
+shall
+1. 쉘스크립트 파일 만드는법
