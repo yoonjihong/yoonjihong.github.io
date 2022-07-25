@@ -1,9 +1,15 @@
-nextjs _document, _app의 역할
+노마드코더, 코딩애플, 드림코딩, 조코딩(애매함), 김버그
 
-JavaScript
-0. 클로저란
-1. 번들어의 이해
-https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
+nextjs \_document, \_app의 역할
+
+css
+https://blinders.tistory.com/93
+reflow, repainting(redraw?) - https://velog.io/@young_pallete/Reflow-Repaint%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
+
+JavaScript 0. 클로저란 0. 인자, 인수, 파람
+
+1. 번들러의 이해
+   https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 2. DOM이란
 3. 함수형 클래스형 차이점
 4. scope, 호이스팅 등등
@@ -13,16 +19,23 @@ https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%
 8. https://sustainable-dev.tistory.com/156 -> 자바스크립트에서 불변성이란
 9. immer 사용법 -> 리액트 불변성을 지켜야하는이유에 링크 걸기
 
-
 Git
+
 1. gitFlow vs Trunk-based
 
-
 React
-https://ljtaek2.tistory.com/142
-0. react18에서 리액트가 상태 처리하는 방식(배치?)
-1. 훅의 종류 및 사용법
-1-1. 상태 끌어올리기?
+https://ljtaek2.tistory.com/142 0. react18에서 리액트가 상태 처리하는 방식(배치?)
+
+now. useCallback, memo
+
+- https://soomst.tistory.com/entry/useCallback%EC%9D%B4%EB%9E%80
+- https://velog.io/@rjsdnql123/TIL-React.useCallback-%EC%9D%B4%EB%9E%80
+- https://velog.io/@lemon-ginger/React.memo-useMemo-useCallback-%EC%9C%BC%EB%A1%9C-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%8B%9C%ED%82%A4%EA%B8%B0
+
+컴포넌트 - 검색어: react 컴포넌트 최적화 - https://velog.io/@shin6403/React-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EB%8A%94-7%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-Hooks-%EA%B8%B0%EC%A4%80
+
+0. useContext, useCallback, useMemo, useRef, useReducer, useImperativeHandle, useLayoutEffect, useDebugValue
+1. 상태 끌어올리기?
 2. 커스텀 훅
 3. 라이프사이클관리?(생명주기?)
 4. api -> swr, reactQuery
@@ -30,21 +43,21 @@ https://ljtaek2.tistory.com/142
 6. Production모드로 배포, .env
 7. CI/CD
 8. 상태관리
-https://maeng2418.github.io/react/state_management/
-https://techblog.woowahan.com/8311/
-11. Forwarding Refs
-13. 렌더링 시 key 최적화
-14. 마운트와 언마운트 https://jongminfire.dev/react-use-effect-%ED%9B%85-%EC%9D%B4%ED%8E%99%ED%8A%B8-%ED%95%A8%EC%88%98-%ED%81%B4%EB%A6%B0%EC%97%85-%ED%95%A8%EC%88%98
-
+   https://maeng2418.github.io/react/state_management/
+   https://techblog.woowahan.com/8311/
+9. Forwarding Refs
+10. 렌더링 시 key 최적화
 
 Typescript
+
 1. interface vs type - https://yceffort.kr/2021/03/typescript-interface-vs-type
 
 Nextjs
+
 1. https://kyounghwan01.github.io/blog/React/next/mui-styled/#%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%89%E1%85%A6%E1%84%90%E1%85%B5%E1%86%BC
 
-
 Flutter
+
 1. 릴리즈 모드 실행
 2. 보더 라디우스 사용법
 3. getx패턴에 페이지 이동 안되는거(컨트롤러 바인딩된 페이지)
@@ -52,19 +65,19 @@ Flutter
 5. https://jacobko.info/flutter/flutter-17/ Getx
 
 기타
+
 1. .vscode config
 2. https://velog.io/@j1min/Vscode-Prettier-%EC%A0%81%EC%9A%A9-%EC%95%88%EB%90%A8-%EA%B3%A0%EC%B9%98%EB%8A%94%EB%B2%95
 3. CS란?, 반복되는 CS
 4. 지라
-https://spoqa.github.io/2022/06/15/how-to-use-jira-in-spoqa.html
+   https://spoqa.github.io/2022/06/15/how-to-use-jira-in-spoqa.html
 5. 사이드프로젝트`
-https://brunch.co.kr/@s0ojin/36
-
+   https://brunch.co.kr/@s0ojin/36
 
 https://mugon-devlog.tistory.com/73
 uri와 url의 차이점
 
-
 네트워크
+
 1. https, 보안 등등,
 2. 네트워크 리퀘스트 - 단일/다중 리퀘스트 용량차이, http2.0(?) api 요청 개수 제한,

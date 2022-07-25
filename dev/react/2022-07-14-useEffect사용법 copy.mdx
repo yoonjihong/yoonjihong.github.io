@@ -1,8 +1,8 @@
 ---
 slug: useEffect_사용법
-title: useEffect 사용 방법
+title: Hook - useEffect 사용법
 authors: [yjh]
-tags: [리액트, Hook, useState]
+tags: [리액트, Hook, useEffect]
 draft: true
 ---
 
@@ -20,7 +20,7 @@ draft: true
 ## useEffect란?
 
 리액트에 함수형 컴포넌트에서 SideEffect를 사용할 수 있게 해주는 기능으로  
-`즉 우리가 useEffect에 넘긴 내용들이 컴포넌트가 렌더링된 이후에 처리될 수 있게 해준다.`
+`우리가 useEffect에 넘긴 내용들이 컴포넌트가 렌더링된 이후에 처리될 수 있게 해준다.`
 
 > 리액트에선 useEffect가 실행되는 시점에 이미 DOM이 업데이트 됐음을 보장한다.
 
@@ -30,7 +30,7 @@ useEffect 사용법은 두가지로 정리(Clean Up)이 없는 Effect와 있는 
 
 <br />
 
-### 정리(Clean Up)이 없는 Effect
+### 정리(Clean Up)가 없는 Effect
 
 네트워크 리퀘스트, DOM 수동 조작, 로깅 등은 실행 이후 신경 쓸 것이 없기 때문에 정리가 필요 없는 경우다.
 
@@ -86,4 +86,4 @@ useEffect(() => {
 }, [keyword]);
 ```
 
-> 마운트 -> interval 실행 -> keyword 변경 -> 클린 업 함수 실행 -> interval 실행
+> 렌더링 -> interval 실행 -> keyword 변경 -> 클린 업 함수 실행 -> interval 실행
