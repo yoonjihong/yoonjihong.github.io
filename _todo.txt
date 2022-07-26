@@ -25,12 +25,12 @@ JavaScript
 9. immer 사용법 -> 리액트 불변성을 지켜야하는이유에 링크 걸기
 10. 캐싱
 11. 보일러 플레이트 코드란?
+12. 자바스크립트 함수 동등성 - https://www.daleseo.com/react-hooks-use-callback/
 
 
 
 React
 
-- https://soomst.tistory.com/entry/useCallback%EC%9D%B4%EB%9E%80
 - https://velog.io/@rjsdnql123/TIL-React.useCallback-%EC%9D%B4%EB%9E%80
 - https://velog.io/@lemon-ginger/React.memo-useMemo-useCallback-%EC%9C%BC%EB%A1%9C-%EC%B5%9C%EC%A0%81%ED%99%94-%EC%8B%9C%ED%82%A4%EA%B8%B0
 
@@ -53,6 +53,9 @@ React
 12. 캐싱
 13. https://ljtaek2.tistory.com/142 0. react18에서 리액트가 상태 처리하는 방식(배치?)
 14. 빌드 환경과 개발환경의 차이점
+15. 리액트 StrictMode https://jeonghwan-kim.github.io/2022/05/20/react-strict-mode -> 개발환경에서 해당 모드가 렌더링을 두번씩 하게함
+16. 리액트 테스트 코드 https://maeng2418.github.io/react/react_testing_library/
+17. 컴포넌트 분리의 중요성
 
 
 
