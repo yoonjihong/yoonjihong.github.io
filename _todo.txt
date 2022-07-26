@@ -5,7 +5,8 @@
 css
 https://blinders.tistory.com/93
 reflow, repainting(redraw?) - https://velog.io/@young_pallete/Reflow-Repaint%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
-
+속성별로 reflow, repating
+렌더 트리에 포함되는지 안되는지
 
 
 
@@ -22,6 +23,7 @@ JavaScript
 7. es6,es5, spread??
 8. https://sustainable-dev.tistory.com/156 -> 자바스크립트에서 불변성이란
 9. immer 사용법 -> 리액트 불변성을 지켜야하는이유에 링크 걸기
+10. 캐싱
 
 
 
@@ -50,6 +52,8 @@ now. useCallback, memo
    https://techblog.woowahan.com/8311/
 9. Forwarding Refs
 10. 렌더링 시 key 최적화
+11. 리액트 자료구조란? -> 메모제이션 메모이제이션의 대표적인 예로는 동적계획법의 탑다운 방식이 있다.
+12. 캐싱
 
 
 
@@ -91,7 +95,7 @@ Flutter
 3. CS란?, 반복되는 CS
 4. 지라
    https://spoqa.github.io/2022/06/15/how-to-use-jira-in-spoqa.html
-5. 사이드프로젝트`
+5. 사이드프로젝트
    https://brunch.co.kr/@s0ojin/36
 
 https://mugon-devlog.tistory.com/73
@@ -106,6 +110,11 @@ uri와 url의 차이점
 2. 네트워크 리퀘스트 - 단일/다중 리퀘스트 용량차이, http2.0(?) api 요청 개수 제한,
 
 
+
+
+서버
+1. 도커로 개발환경 세팅하기
+2. 쿠버네틱스
 
 
 shall

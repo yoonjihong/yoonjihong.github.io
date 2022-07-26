@@ -1,0 +1,157 @@
+---
+slug: 메모이제이션_hook
+title: Hook - 메모이제이션
+authors: [yjh]
+tags: [리액트, Hook, useMemo, useCallback]
+draft: true
+---
+
+<div className="preview">메모이제이션 Hook. useMemo, useCallback</div>
+
+<!--truncate-->
+
+useMemo와 useCallback은 메모이제이션을 지원하는 리액트 내장 훅으로 퍼포먼스 최적화를 위해 사용된다.
+
+## 메모이제이션
+
+메모제이션이란 계산된 값을 자료구조에 저장하고 이후 같은 계산을 반복하지 않고 저장된 값을 꺼내 쓰는 것을 말한다.
+
+## React.memo
+
+React.memo는 의존하는 값들이 변경되었을 때만 렌더링이 일어난다.
+
+<br />
+
+### 사용법
+
+퍼포먼스 최적화를 원하는 컴포넌트를 React.memo로 감싸주기만 하면 된다.
+
+```jsx
+React.memo(Component);
+```
+
+> React.memo는 훅이 아닌 HOC다.
+
+<br />
+
+버튼 컴포넌트를 예시로 보면 props인 label과 onClick이 바뀌었을 때만 렌더링이 일어난다.
+
+```jsx
+import { memo } from 'react';
+
+const Button = ({ label, onClick }) => {
+  return <button onClick={onClick}>{label}</button>;
+};
+
+export default memo(Button);
+```
+
+<br />
+
+`두번째 인자에 propsAreEqual 함수를 넘겨 원하는 값만 비교해 렌더링 여부를 결정 할 수도 있다.`  
+onClick의 변경 여부와는 상관없이 label이 변경됐을 때만 렌더링이 일어난다.
+
+```jsx
+export default memo(
+  Button,
+  (prevProps, nextProps) => prevProps.label === nextProps.label,
+);
+```
+
+## useMemo
+
+useMemo는 전달된 함수가 실행되고 반환된 결과 값을 저장한다.
+
+<br />
+
+### 사용법
+
+첫번째 인자로 함수를 넘겨주고 두번째로 의존배열을 전달한다.
+
+```jsx
+const calc = useMemo(() => a + b, [a, b]);
+```
+
+<br />
+
+전달된 의존값이 변경되거나 부모 컴포넌트가 리렌더링 되지 않는 이상 첫 번째 함수는 다시 실행되지 않으며 당연히 값도 변경되지 않는다.
+
+<!-- 버튼을 눌러 b 값을 증가 시킨다고 하더라도 의존 배열에 b가 들어가 있지 않음으로 calc 결과값은 처음 결과 값인 1이 나온다. -->
+
+```jsx
+function App() {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(1);
+
+  const calc = useMemo(() => a + b, [a]);
+  // calc === 1 -> true
+
+  return (
+    <div className="App">
+      <button onClick={() => setB(b + 1)}>plus</button>
+    </div>
+  );
+}
+```
+
+> 의존성 배열에 b가 들어가 있지 않으니 결과 값은 항상 1이 나온다.
+
+## useCallback
+
+useMemo는 실행된 결과 값을 저장한다면 useCallback은 함수 그자체를 저장한다.
+
+<br />
+
+### 사용법
+
+사용법은 useMemo와 동일하다.
+
+```jsx
+// make
+const calc = useCallback(() => a + b, [a, b]);
+
+// use
+calc();
+```
+
+<br />
+
+useCallback도 마찬가지로 전달된 의존값이 변경되거나 부모 컴포넌트가 리렌더링 되지 않는 이상 함수는 다시 만들어지지 않는다.
+
+<!-- 버튼을 눌러 b 값을 증가 시킨다고 하더라도 의존 배열에 b가 들어가 있지 않음으로 calc 결과값은 처음 결과 값인 1이 나온다. -->
+
+```jsx
+function App() {
+  const [a, setA] = useState(0);
+  const [b, setB] = useState(1);
+
+  const calc = useCallback(val => val + a + b, [a]);
+  // calc === 1 -> true
+
+  useEffect(() => {
+    console.log(calc(10));
+    // result 11
+  }, [b]);
+
+  return (
+    <div className="App">
+      <button onClick={() => setB(b + 1)}>plus</button>
+    </div>
+  );
+}
+```
+
+> 의존성 배열에 b가 들어가 있지 않으니 결과 값은 항상 11이 나온다.
+
+<!--
+## asdfas
+
+메모제이션이란 계산된 값을 자료구조에 저장하고 이후 같은 계산을 반복하지 않고 계산된 값을 꺼내 쓰는 것을 말한다.
+
+## asdfas
+
+메모제이션이란 계산된 값을 자료구조에 저장하고 이후 같은 계산을 반복하지 않고 계산된 값을 꺼내 쓰는 것을 말한다. -->
+
+<!-- https://thisblogfor.me/react/hooks_memoization/ -->
+
+<!-- https://react.vlpt.us/basic/19-React.memo.html -->
