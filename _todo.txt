@@ -24,14 +24,11 @@ JavaScript
 8. https://sustainable-dev.tistory.com/156 -> 자바스크립트에서 불변성이란
 9. immer 사용법 -> 리액트 불변성을 지켜야하는이유에 링크 걸기
 10. 캐싱
-
+11. 보일러 플레이트 코드란?
 
 
 
 React
-https://ljtaek2.tistory.com/142 0. react18에서 리액트가 상태 처리하는 방식(배치?)
-
-now. useCallback, memo
 
 - https://soomst.tistory.com/entry/useCallback%EC%9D%B4%EB%9E%80
 - https://velog.io/@rjsdnql123/TIL-React.useCallback-%EC%9D%B4%EB%9E%80
@@ -39,10 +36,10 @@ now. useCallback, memo
 
 컴포넌트 - 검색어: react 컴포넌트 최적화 - https://velog.io/@shin6403/React-%EB%A0%8C%EB%8D%94%EB%A7%81-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%98%EB%8A%94-7%EA%B0%80%EC%A7%80-%EB%B0%A9%EB%B2%95-Hooks-%EA%B8%B0%EC%A4%80
 
-0. useContext, useCallback, useMemo, useRef, useReducer, useImperativeHandle, useLayoutEffect, useDebugValue
+0. useContext, useRef, useReducer, useImperativeHandle, useLayoutEffect, useDebugValue
 1. 상태 끌어올리기?
 2. 커스텀 훅
-3. 라이프사이클관리?(생명주기?)
+3. 라이프사이클관리?(생명주기?), 리액트의 라이프 사이클
 4. api -> swr, reactQuery
 5. 렌더링 최적화 -> useMemo, memo, useCallback 등등
 6. Production모드로 배포, .env
@@ -54,6 +51,18 @@ now. useCallback, memo
 10. 렌더링 시 key 최적화
 11. 리액트 자료구조란? -> 메모제이션 메모이제이션의 대표적인 예로는 동적계획법의 탑다운 방식이 있다.
 12. 캐싱
+13. https://ljtaek2.tistory.com/142 0. react18에서 리액트가 상태 처리하는 방식(배치?)
+14. 빌드 환경과 개발환경의 차이점
+
+
+
+React - Recoil
+1. https://tech.osci.kr/2022/07/05/recoil-react-js-state-management/
+
+
+
+webpack
+1. 빌드, 번들러, 번들, 과정
 
 
 
