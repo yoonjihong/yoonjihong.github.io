@@ -2,7 +2,7 @@
 slug: 메모이제이션_hook
 title: Hook - 메모이제이션
 authors: [yjh]
-tags: [리액트, Hook, useMemo, useCallback]
+tags: [리액트, Hook, useCallback, useMemo, memo, 렌더링, 최적화, 퍼포먼스]
 draft: true
 ---
 
@@ -61,6 +61,15 @@ export default memo(
 ## useMemo
 
 useMemo는 전달된 함수가 실행되고 반환된 결과 값을 저장한다.
+
+<br />
+
+### 사용 권장하는 곳
+
+- Pure Functional Component에서
+- Rendering이 자주 일어날 경우
+- re-rendering이 되는 동안 계속 같은 props값이 전달 될 경우
+- UI element의 양이 많은 컴포넌트의 경우
 
 <br />
 
@@ -145,8 +154,8 @@ function App() {
 
 ## 참고
 
-React.memo, useMemo, useCallback이 퍼포면스 최적화를 위해 사용되지만 무분별한 사용은 오히려
-불필요한 계산이 이뤄지기 때문에 오히려 성능이 떨어진다.
+React.memo, useMemo, useCallback이 퍼포면스 최적화를 위해 사용되지만 최적화를 위한 연산이 불필요할 경우엔
+비용만 발생하기 무조건적인 사용은 지양한다.
 
 <br />
 
