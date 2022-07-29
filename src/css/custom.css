@@ -74,8 +74,8 @@ html {
 h1,
 h2,
 h3 {
-  font-family: 'gm' !important;
-  font-family: 'Noto Sans KR', sans-serif !important;
+  /* font-family: 'Noto Sans KR', sans-serif !important; */
+  font-family: 'gm', sans-serif !important;
   font-weight: 500;
 }
 
@@ -86,7 +86,9 @@ h3 {
 h4,
 h5,
 h6 {
-  font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'gm', sans-serif !important;
+  font-weight: 500;
 }
 
 .navbar__brand {
@@ -547,7 +549,7 @@ body
 }
 
 .markdown > h2 {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
   padding-top: 22px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -558,7 +560,7 @@ body
 .markdown > h3 {
   margin-top: 0.8rem;
   margin-bottom: 0.4rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .markdown p {
@@ -590,11 +592,18 @@ blockquote a::after {
 }
 
 blockquote {
-  padding-left: 1rem;
+  /* background: rgba(0, 0, 0, 0.03);
+  ; */
+  padding: 0.8rem 1.2rem;
+  background: rgba(100, 108, 255, 0.05);
+  border-radius: 10px;
+  border-left: 3px solid var(--primary);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 blockquote::before {
-  content: '';
+  /* content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -603,7 +612,7 @@ blockquote::before {
   width: 3px;
   height: 94%;
   background: var(--primary);
-  opacity: 0.5;
+  opacity: 0.5; */
 }
 
 blockquote a {
@@ -621,22 +630,30 @@ blockquote a {
 }
 
 em {
-  color: var(--primary);
-  font-style: normal;
+  /* color: var(--primary); */
+  color: rgba(0, 0, 255, 0.8);
 }
 
 .markdown p code {
   font-family: 'gm';
-  /* background: #282a36; */
-  /* background: var(--bg); */
   background: none;
-  /* padding: 0rem 0.4rem 0rem; */
-  font-size: 14px;
+  font-size: 15px;
   padding: 0;
-  /* line-height: 1.7; */
-  /* border-radius: 0.2rem; */
-  color: var(--primary);
-  /* color: var(--primary); */
+
+  color: rgba(0, 0, 255, 0.8);
+  /* font-weight: 100; */
+
+  /* text-decoration: underline;
+  text-underline-position: under;
+  text-decoration-color: rgba(0, 0, 0, 0.6);
+  text-decoration-thickness: 1px; */
+
+  /* background: rgba(100, 108, 255, 0.05); */
+
+  /* background: var(--primary);
+  color: white;
+  border-radius: 0px;
+  padding: 0.4rem; */
 }
 
 .blog-list-page main article .preview {
