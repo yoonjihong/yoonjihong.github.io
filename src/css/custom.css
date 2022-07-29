@@ -76,6 +76,7 @@ h2,
 h3 {
   font-family: 'gm' !important;
   font-family: 'Noto Sans KR', sans-serif !important;
+  font-weight: 500;
 }
 
 h3 {
@@ -530,18 +531,19 @@ body
 }
 
 .markdown {
-  font-size: 14px;
+  font-size: 15px;
+  font-weight: 100;
+  color: #000;
+}
+
+.markdown i {
+  display: block;
+  height: 12px;
 }
 
 #post-content .preview + h2 {
   padding-top: 0 !important;
   border-top: none !important;
-}
-
-.markdown > h3 {
-  /* border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 2rem !important; */
-  margin-top: 0.8rem;
 }
 
 .markdown > h2 {
@@ -554,6 +556,7 @@ body
 }
 
 .markdown > h3 {
+  margin-top: 0.8rem;
   margin-bottom: 0.4rem;
   font-size: 1.2rem;
 }
@@ -571,7 +574,8 @@ body
 
 blockquote a,
 blockquote {
-  color: rgba(0, 0, 0, 0.5);
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: #000;
   font-size: 0.8rem;
   margin-top: 1rem;
   border-left: none;
@@ -637,7 +641,7 @@ em {
 
 .blog-list-page main article .preview {
   font-size: 0.85rem;
-  color: rgba(0, 0, 0, 0.5);
+  /* color: rgba(0, 0, 0, 0.5); */
   line-height: 1.8;
 }
 
@@ -819,12 +823,6 @@ p code {
   font-size: 1.5rem;
 }
 
-.margin-vert--md {
-  /* margin-top: 0.4rem !important; */
-  /* opacity: 0.6; */
-  /* color: var(--primary); */
-}
-
 /* : 스크롤바 영역에 대한 설정 */
 ::-webkit-scrollbar {
   width: 0;
@@ -841,17 +839,21 @@ p code {
 
 .scrollBar {
   position: fixed;
-  right: calc(0.23rem + 4px);
+  /* right: calc(0.23rem); */
+  right: 3px;
   top: 0;
   transform: translateY(calc(25px + 30px));
-  padding: 12px 4px;
+  /* padding: 12px 4px; */
+  padding-top: 2px;
+  width: 1.7rem;
+  height: 1.7rem;
   background: #000;
   color: white;
   opacity: 0.9;
-  border-radius: 7px;
+  border-radius: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   line-height: 0.3;
   font-size: 1.2rem;
@@ -928,4 +930,10 @@ p code {
   border-radius: 10px;
   /* opacity: 0.7; */
   background: none;
+}
+
+.container_node_modules-\@docusaurus-theme-classic-lib-theme-BlogPostItem-Header-Info-styles-module {
+  font-weight: 100;
+  margin: 0.3rem 0 1rem !important;
+  font-size: 0.8rem !important;
 }

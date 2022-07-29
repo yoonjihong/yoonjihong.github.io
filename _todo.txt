@@ -1,6 +1,8 @@
 노마드코더, 코딩애플, 드림코딩, 조코딩(애매함), 김버그
 
 
+명령형 프로그래밍, 선언형 프로그래밍
+
 
 css
 https://blinders.tistory.com/93
@@ -11,11 +13,12 @@ reflow, repainting(redraw?) - https://velog.io/@young_pallete/Reflow-Repaint%EC%
 
 
 JavaScript 
+0. 렌더링, 계산, querySelector사용시 노드 트리 계산
+1. 브라우저(웹) api, js api(메소드?)
+2. DOM이란
 0. 클로저란 
 0. 인자, 인수, 파람
-1. 번들러의 이해
-   https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
-2. DOM이란
+1. 번들러의 이해 - https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 3. 함수형 클래스형 차이점
 4. scope, 호이스팅 등등
 5. 웹 동작원리
@@ -26,19 +29,26 @@ JavaScript
 10. 캐싱
 11. 보일러 플레이트 코드란?
 12. 자바스크립트 함수 동등성 - https://www.daleseo.com/react-hooks-use-callback/
-
+13. abort로 http 요청 취소하기 https://blog.outsider.ne.kr/1602
+14. var, let, const - https://evan-moon.github.io/2019/06/18/javascript-let-const/
 
 
 React
 
-now. useRef
+now.
 
-0. useContext, useRef, useReducer, useImperativeHandle, useLayoutEffect, useDebugValue
+0. https://techblog.woowahan.com/8268/ - cli로 컴포넌트 생성하기
+0. Virtual 돔이란, 리얼돔 버추얼돔이 동기화 되지 않았을 때 문제점
+0. callbackRef
+0. useContext, useReducer, useImperativeHandle, useLayoutEffect, useDebugValue
 1. 상태 끌어올리기?
 2. 커스텀 훅
 3. 라이프사이클관리?(생명주기?), 리액트의 라이프 사이클
 4. api -> swr, reactQuery
-5. 렌더링 최적화 -> useMemo, memo, useCallback 등등
+5. 렌더링 최적화 -> 
+   <div className="App" ref={ref2}></div>
+   <div className="App" ref={(v) => ref2(v)}></div> 두개의 차이점
+
 6. Production모드로 배포, .env
 7. CI/CD
 8. 상태관리

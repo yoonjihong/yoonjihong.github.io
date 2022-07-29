@@ -19,7 +19,7 @@ const ScrollBar = () => {
   const onScroll = () => {
     if (ref.current) {
       const rate = window.scrollY / scrollHeight;
-      const top = (window.innerHeight - ref.current.offsetHeight - 90) * rate;
+      const top = (window.innerHeight - ref.current.offsetHeight - 60) * rate;
 
       rateRef.current.innerHTML = Math.round(rate * 100) + '%';
       ref.current.style.top = top + 'px';
@@ -49,8 +49,8 @@ const ScrollBar = () => {
   return (
     <>
       <div className="scrollBar" ref={ref}>
-        <div>^</div>
-        <div>^</div>
+        <div>=</div>
+        <div></div>
 
         <div className="rate" ref={rateRef}>
           100%
@@ -65,7 +65,6 @@ const ScrollBar = () => {
         max={scrollHeight}
         className="scrollInput"
         onChange={e => {
-          console.log(e.target.value);
           window.scrollTo(0, e.target.value);
         }}
       />

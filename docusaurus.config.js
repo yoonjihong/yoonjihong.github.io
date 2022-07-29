@@ -113,6 +113,10 @@ const config = {
                 to: '/dev/react',
               },
               {
+                label: 'Javascript',
+                to: '/dev/js',
+              },
+              {
                 label: 'Nodejs',
                 to: '/dev/nodejs',
               },
