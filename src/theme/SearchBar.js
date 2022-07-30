@@ -39,8 +39,6 @@ const ScrollBar = () => {
 
     document.addEventListener('scroll', onScroll);
 
-    console.log(scrollHeight);
-
     return () => {
       document.removeEventListener('scroll', onScroll);
     };

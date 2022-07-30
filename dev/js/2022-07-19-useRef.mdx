@@ -10,21 +10,69 @@ draft: true
 
 <!--truncate-->
 
-## 스코프(Scope)의 뜻
+스코프란 `식별자(변수,함수,클래스)`에 접근 가능한 유효 범위를 말한다.
 
-스코프(Scope)는 '범위'라는 의미를 가지고 있다.
+> 스코프란 `"식별자 접근 규칙에 따른 유효범위"`를 말한다.  
+> 여기서 식별자란 변수, 함수, 클래스를 의미한다.  
+> 즉 변수, 함수, 클래스에 접근 가능한 유효 범위가 존재하고 그 범위를 스코프라고 부른다.  
+> 범위는 중괄호, 함수에 의해 나눠지고 각각을 `Block Scope와 Function Scope`로 부른다.
+
+## 스코프의 종류
+
+Block/Function 스코프가 있다.
+
+> () => {} 화살표 함수는 블록 스코프로 취급된다.
 
 <br />
 
-### 스코프란?
+### 1. 스코프는 안에서 밖으로 접근 가능하다.
 
-스코프란 "식별자 접근 규칙에 따른 유효범위"를 말한다.
+스코프는 안에서 밖으로만 접근이 가능하고 그 반대인 밖에서 안으로 접근은 불가능하다.
 
-<i />
+```js
+const app = () => {
+  const a = '테스트';
 
-식별자란 변수, 함수, 클래스를 의미한다.  
-즉 변수, 함수, 클래스에 접근 가능한 유효 범위가 존재하고 그 범위를 스코프라고 부른다.
+  const test = () => {
+    const b = '비비비';
+  }; // test 블록 종료
 
-<i />
+  console.log(b); // result: Uncaught ReferenceError: b is not defined
+}; // app 블록 종료
+```
 
-그리고 범위는 중괄호, 함수에 의해 나눠지고 각각을 Block Scope와 Function Scope로 부른다.
+> 위 코드에서 a 식별자에 접근 가능한 유효 범위는 app블록이 끝나는 지점이다.  
+> 해당 범위 안에 있다면 식별자 a에는 모두 접근이 가능하다.
+
+<br />
+
+### 2. 스코프는 중첩이 가능하다.
+
+아래 코드를 보면 알 수 있듯이 스코프는 여러번 중첩해서 사용할 수 있다.
+
+```js
+const app = () => {
+  const a = '테스트';
+
+  const test = () => {
+    const b = '비비비';
+
+    console.log(a); // result: 테스트
+
+    const test2 = () => {
+      const c = '시시시';
+
+      console.log(a); // result: 테스트
+      console.log(b); // result: 비비비
+
+      const test3 = () => {
+        const d = '디디디';
+
+        console.log(a); // result: 테스트
+        console.log(b); // result: 비비비
+        console.log(c); // result: 시시시
+      }; // test3 블록 종료
+    }; // test2 블록 종료
+  }; // test 블록 종료
+}; // app 블록 종료
+```
