@@ -20,7 +20,7 @@ JavaScript
 0. 인자, 인수, 파람
 1. 번들러의 이해 - https://medium.com/naver-place-dev/javascript-%EB%B2%88%EB%93%A4%EB%9F%AC%EC%9D%98-%EC%9D%B4%ED%95%B4-1-javascript-%EB%AA%A8%EB%93%88-d68c7e438fcd
 3. 함수형 클래스형 차이점
-4. scope, 호이스팅 등등
+4. 호이스팅
 5. 웹 동작원리
 6. 원시타입 참조(객체) 타입
 7. es6,es5, spread??
@@ -30,7 +30,6 @@ JavaScript
 11. 보일러 플레이트 코드란?
 12. 자바스크립트 함수 동등성 - https://www.daleseo.com/react-hooks-use-callback/
 13. abort로 http 요청 취소하기 https://blog.outsider.ne.kr/1602
-14. var, let, const - https://evan-moon.github.io/2019/06/18/javascript-let-const/
 15. eslint - https://velog.io/@kangthink/ESLint-%EC%B0%A8%EA%B7%BC%EC%B0%A8%EA%B7%BC-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0
 
 

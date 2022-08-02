@@ -1,12 +1,12 @@
 ---
-slug: scope_var_let_const
-title: 스코프와(Scope) var, let, const
+slug: scope
+title: 스코프(Scope)란?
 authors: [yjh]
 tags: [리액트, Hook, useRef]
 draft: true
 ---
 
-<div className="preview">Scope와 var, let, const의 차이점에 대해 알아보자</div>
+<div className="preview">Scope에 대해 알아보자</div>
 
 <!--truncate-->
 
@@ -21,11 +21,11 @@ draft: true
 
 Block/Function 스코프가 있다.
 
-> () => {} 화살표 함수는 블록 스코프로 취급된다.
+> () => {} 화살표 함수는 함수 스코프로 취급된다.
 
 <br />
 
-### 1. 스코프는 안에서 밖으로 접근 가능하다.
+### 1. 스코프는 안에서 밖으로만
 
 스코프는 안에서 밖으로만 접근이 가능하고 그 반대인 밖에서 안으로 접근은 불가능하다.
 
@@ -46,7 +46,7 @@ const app = () => {
 
 <br />
 
-### 2. 스코프는 중첩이 가능하다.
+### 2. 스코프는 중첩이 가능하다
 
 아래 코드를 보면 알 수 있듯이 스코프는 여러번 중첩해서 사용할 수 있다.
 
@@ -75,4 +75,36 @@ const app = () => {
     }; // test2 블록 종료
   }; // test 블록 종료
 }; // app 블록 종료
+```
+
+<br />
+
+### 3. 전역 스코프와 지역 스코프
+
+가장 바깥쪽의 스코프를 전역 스코프라고 한다.
+
+```js
+// root -> 전역 스코프
+var a = '테스트';
+
+const test = () => {
+  // 지역 스코프
+  console.log(a); // result: 테스트
+};
+```
+
+<br />
+
+### 4. 우선순위
+
+전역 변수보다 지역 변수의 우선순위가 더 높다.
+
+```js
+let a = '123';
+
+const test = () => {
+  let a = '456';
+
+  console.log(a); // result: 456
+};
 ```

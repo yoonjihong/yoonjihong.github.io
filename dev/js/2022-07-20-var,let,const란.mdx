@@ -1,0 +1,131 @@
+---
+slug: var_let_const
+title: var, let, const의 차이점
+authors: [yjh]
+tags: [리액트, Hook, useRef]
+draft: true
+---
+
+<div className="preview">var, let, const 각각의 차이점에 대해 알아보자</div>
+
+<!--truncate-->
+
+javascript에서 변수 선언방식은 3가지가 있다.
+
+## var 키워드
+
+> 유효 범위 - `함수 레벨 스코프`  
+> 값 재할당 - `가능`  
+> 재선언 - `가능`
+
+<br />
+
+var키워드는 함수 레벨 스코프이기 때문에 아래 코드와 같이 작동된다.
+
+```js
+var a = '123';
+
+const test = () => {
+  var a = '테스트';
+
+  console.log(a); // result: '테스트'
+};
+
+test();
+
+console.log(a); // result: '123'
+```
+
+<br />
+
+또한 블록 레벨 스코프는 무시되기 때문에 아래와 같이 작동된다.
+
+```js
+var i = 0;
+
+for (var i = 0; i < 10; i++) {
+  console.log('for')l
+}
+
+console.log(i)
+```
+
+`var 사용은 예측이 힘든 코드를 만들기 때문에 let이나 const 사용을 권장한다.`
+
+## let 키워드
+
+> 유효 범위 - `블록 레벨 스코프 / 함수 스코프`  
+> 값 재할당 - `가능`  
+> 재선언 - `불가능`
+
+<br />
+
+재할당 가능
+
+```js
+let a = '123';
+a = '테스트';
+
+console.log(a); // result: '테스트'
+```
+
+재선언 불가능
+
+```js
+let a = '123';
+let a = '테스트';
+
+// Uncaught SyntaxError: Identifier 'a' has already been declared
+```
+
+<br />
+
+블록 레벨 스코프이기 때문에 아래와 같이 작동된다.
+
+```js
+let i = 0;
+
+for (let i = 0; i < 10; i++) {
+  console.log(i); // result: 0 ~ 9
+}
+
+console.log(i); // result: 0
+```
+
+## const 키워드
+
+> 유효 범위 - `블록 레벨 스코프 / 함수 스코프`  
+> 값 재할당 - `불가능`  
+> 재선언 - `불가능`
+
+<br />
+
+재할당 불가능
+
+```js
+const a = '123';
+a = '테스트';
+
+// VM1225:2 Uncaught TypeError: Assignment to constant variable.
+```
+
+const의 경우 값 재핼당이 불가능하지만 객체나 배열인 경우에는 아래처럼 내부 값 수정은 가능하다.
+
+```js
+const obj = {
+  name: '테스트',
+};
+
+obj.name = '수정';
+
+console.log(obj.name); // result: '수정'
+```
+
+재선언 불가능
+
+```js
+const a = '123';
+const a = '테스트';
+
+// Uncaught SyntaxError: Identifier 'a' has already been declared
+```
