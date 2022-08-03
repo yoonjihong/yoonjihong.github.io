@@ -1,0 +1,21 @@
+---
+slug: 호이스팅
+title: 호이스팅이란?
+authors: [yjh]
+tags: [javascript, 호이스팅]
+draft: true
+---
+
+<div className="preview">호이스팅이 뭔지 알아보자</div>
+
+<!--truncate-->
+
+호이스팅은 코드를 실행하기 전 변수/함수 선언이 해당 스코프의 최상단으로 끌어 올려진 것 같은 현상을 말한다.
+
+```js
+test();
+
+function test() {
+  console.log('asdf');
+}
+```
