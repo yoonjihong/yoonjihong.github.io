@@ -856,11 +856,9 @@ p code {
 
 .scrollBar {
   position: fixed;
-  /* right: calc(0.23rem); */
   right: 3px;
   top: 0;
   transform: translateY(calc(25px + 30px));
-  /* padding: 12px 4px; */
   padding-top: 2px;
   width: 1.7rem;
   height: 1.7rem;

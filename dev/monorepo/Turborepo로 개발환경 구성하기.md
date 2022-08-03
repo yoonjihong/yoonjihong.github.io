@@ -1,8 +1,8 @@
 ---
-slug: Turborepo로개발환경구성하기
+slug: turborepo
 title: Turborepo로 개발환경 구성하기
 authors: [yjh]
-tags: [Turborepo, 모노레포, 개발환경, Vercel, NextJs]
+tags: [Turborepo, Vercel, NextJs]
 date: 2022-06-09
 ---
 

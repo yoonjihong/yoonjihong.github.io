@@ -60,13 +60,13 @@ const config = {
   ],
 
   plugins: [
-    makeBlog('flutter'),
-    makeBlog('monorepo'),
-    makeBlog('ts'),
+    // makeBlog('react'),
+    // makeBlog('flutter'),
+    // makeBlog('monorepo'),
+    // makeBlog('ts'),
     makeBlog('js'),
-    makeBlog('etc'),
-    makeBlog('react'),
-    makeBlog('nodejs'),
+    // makeBlog('etc'),
+    // makeBlog('nodejs'),
   ],
 
   themeConfig:
@@ -103,47 +103,37 @@ const config = {
         // hideOnScroll: true,
         items: [
           {
-            to: '/dev/flutter',
+            to: '/dev/js',
             label: '개발',
             position: 'left',
             className: 'nav-devMenu',
             items: [
               {
                 label: 'React',
-                to: '/dev/react',
-              },
-              {
-                label: 'Javascript',
                 to: '/dev/js',
               },
-              {
-                label: 'Nodejs',
-                to: '/dev/nodejs',
-              },
-              {
-                label: 'Monorepo',
-                to: '/dev/monorepo',
-              },
-              {
-                label: 'Flutter',
-                to: '/dev/flutter',
-              },
-              {
-                label: '기타',
-                to: '/dev/etc',
-              },
+              // {
+              //   label: 'Javascript',
+              //   to: '/dev/js',
+              // },
+              // {
+              //   label: 'Nodejs',
+              //   to: '/dev/nodejs',
+              // },
+              // {
+              //   label: 'Monorepo',
+              //   to: '/dev/monorepo',
+              // },
+              // {
+              //   label: 'Flutter',
+              //   to: '/dev/flutter',
+              // },
+              // {
+              //   label: '기타',
+              //   to: '/dev/etc',
+              // },
             ],
           },
-          // {
-          //   to: '/dev/react',
-          //   label: '디자인',
-          //   position: 'left',
-          // },
-          // {
-          //   to: '/dev/etc',
-          //   label: '기타',
-          //   position: 'left',
-          // },
           {
             href: 'https://github.com/yoonjihong',
             label: '깃허브',

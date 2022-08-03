@@ -1,8 +1,8 @@
 ---
-slug: Nx로React개발환경구성하기
+slug: monorepo_nx
 title: Nx로 React 개발환경 구성하기
 authors: [yjh]
-tags: [Nx, 모노레포, 개발환경, React]
+tags: [Nx, React]
 date: 2022-06-08
 ---
 

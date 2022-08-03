@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[5798],{4389:function(t){t.exports=JSON.parse('{"permalink":"/dev/js-ts/tags/\ud14c\uc2a4\ud2b8","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

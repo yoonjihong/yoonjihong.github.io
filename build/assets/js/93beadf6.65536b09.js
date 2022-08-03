@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunktest=self.webpackChunktest||[]).push([[1519],{646:function(s){s.exports=JSON.parse('{"label":"\ube14\ub85c\uadf8","permalink":"/dev/js-ts/tags/\ube14\ub85c\uadf8","allTagsPath":"/dev/js-ts/tags","count":1}')}}]);

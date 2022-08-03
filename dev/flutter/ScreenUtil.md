@@ -2,7 +2,7 @@
 slug: screenutil
 title: screenutil로 다양한 화면 크기 대응하기
 authors: [yjh]
-tags: [플러터, flutter, 반응형, 패키지, 화면대응]
+tags: []
 date: 2022-06-18
 ---
 
